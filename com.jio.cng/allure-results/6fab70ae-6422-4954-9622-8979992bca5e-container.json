@@ -1,0 +1,1 @@
+{"uuid":"6fab70ae-6422-4954-9622-8979992bca5e","name":"com.cng.generic.BaseClass.login","children":["cf3bebc7-f2aa-43f0-a940-1ac93fa72d68"],"description":"","befores":[{"name":"login","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1747736748630,"stop":1747736754142}],"afters":[],"start":1747736748630,"stop":1747736754143}
