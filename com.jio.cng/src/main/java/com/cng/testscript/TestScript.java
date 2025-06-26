@@ -50,7 +50,7 @@ public class TestScript extends BaseClass {
 	}
 
 	// ****************SITE PAGE********************
-	@Test(enabled=false)
+	@Test(enabled=true)
 	@Epic("EP002")
 	@Story("Site Page")
 	@Feature("Feature 2 : Adding Site in the portal")
@@ -73,7 +73,7 @@ public class TestScript extends BaseClass {
 		
 	
 	// ********************UserSession Page************************
-	@Test(enabled=false)
+	@Test(enabled=true)
 	@Epic("EP003")
 	@Story("UserSession Page")
 	@Feature("Feature 3 : Checking the users activities")

@@ -17,26 +17,26 @@
       <![CDATA[closeBrowser]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-25T11:16:20 IST" name="Default suite" finished-at="2025-06-25T11:17:36 IST" duration-ms="75986">
+  <suite started-at="2025-06-26T15:25:15 IST" name="Suite" finished-at="2025-06-26T15:25:41 IST" duration-ms="26543">
     <groups>
     </groups>
-    <test started-at="2025-06-25T11:16:20 IST" name="Default test" finished-at="2025-06-25T11:17:36 IST" duration-ms="75986">
+    <test started-at="2025-06-26T15:25:15 IST" name="Test" finished-at="2025-06-26T15:25:41 IST" duration-ms="26543">
       <class name="com.cng.testscript.Login">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.cng.testscript.Login@3b36e000]" started-at="2025-06-25T11:16:20 IST" name="openBrowser" finished-at="2025-06-25T11:16:23 IST" duration-ms="2546" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.cng.testscript.Login@de88ac6]" started-at="2025-06-26T15:25:15 IST" name="openBrowser" finished-at="2025-06-26T15:25:18 IST" duration-ms="3092" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[openBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.Login@3b36e000]" started-at="2025-06-25T11:16:23 IST" name="login" finished-at="2025-06-25T11:16:28 IST" duration-ms="5108" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.Login@de88ac6]" started-at="2025-06-26T15:25:18 IST" name="login" finished-at="2025-06-26T15:25:23 IST" duration-ms="4979" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[login]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="checkWarning()[pri:0, instance:com.cng.testscript.Login@3b36e000]" started-at="2025-06-25T11:16:28 IST" name="checkWarning" finished-at="2025-06-25T11:16:38 IST" duration-ms="9670" status="FAIL">
+        <test-method signature="checkWarning()[pri:0, instance:com.cng.testscript.Login@de88ac6]" started-at="2025-06-26T15:25:23 IST" name="checkWarning" finished-at="2025-06-26T15:25:33 IST" duration-ms="9776" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Invalid Username or Password] but found []]]>
@@ -87,36 +87,36 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </line>
           </reporter-output>
         </test-method> <!-- checkWarning -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.Login@3b36e000]" started-at="2025-06-25T11:16:38 IST" name="logout" finished-at="2025-06-25T11:17:36 IST" duration-ms="58028" status="FAIL">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.Login@de88ac6]" started-at="2025-06-26T15:25:33 IST" name="logout" finished-at="2025-06-26T15:25:41 IST" duration-ms="8026" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkWarning status=FAILURE method=Login.checkWarning()[pri:0, instance:com.cng.testscript.Login@3b36e000] output=""]]]>
+                <![CDATA[[TestResult name=checkWarning status=FAILURE method=Login.checkWarning()[pri:0, instance:com.cng.testscript.Login@de88ac6] output=""]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-actions']"}
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
   (Session info: chrome=137.0.7151.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [36073f48d2dc0a92242d1bdfee340804, findElement {using=xpath, value=//div[@class='header-actions']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35021/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 36073f48d2dc0a92242d1bdfee340804]]>
+Command: [f3a191ebceaa7df224f1ccce19715e8b, findElement {using=xpath, value=//div[@class='header-actions']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36887}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36887/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3a191ebceaa7df224f1ccce19715e8b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-actions']"}
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
   (Session info: chrome=137.0.7151.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [36073f48d2dc0a92242d1bdfee340804, findElement {using=xpath, value=//div[@class='header-actions']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35021/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 36073f48d2dc0a92242d1bdfee340804
+Command: [f3a191ebceaa7df224f1ccce19715e8b, findElement {using=xpath, value=//div[@class='header-actions']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36887}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36887/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3a191ebceaa7df224f1ccce19715e8b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -172,14 +172,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
             <line>
               <![CDATA[logout]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.cng.testscript.Login@3b36e000]" started-at="2025-06-25T11:17:36 IST" name="closeBrowser" finished-at="2025-06-25T11:17:36 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.cng.testscript.Login@de88ac6]" started-at="2025-06-26T15:25:41 IST" name="closeBrowser" finished-at="2025-06-26T15:25:41 IST" duration-ms="35" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[closeBrowser]]>
@@ -187,6 +187,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.cng.testscript.Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

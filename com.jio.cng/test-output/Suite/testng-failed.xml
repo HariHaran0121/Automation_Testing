@@ -6,7 +6,7 @@
       <class name="com.cng.testscript.Login">
         <methods>
           <include name="openBrowser"/>
-          <include name="checkPassword"/>
+          <include name="checkWarning"/>
           <include name="login"/>
           <include name="logout"/>
           <include name="closeBrowser"/>
