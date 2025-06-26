@@ -21,10 +21,8 @@ import org.testng.annotations.BeforeTest;
 
 import com.cng.pom.HomePage;
 import com.cng.pom.LoginPage;
-import com.cng.utils.ScreenshotCode;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseClass {
 
@@ -32,10 +30,11 @@ public class BaseClass {
 	public ExtentReports extent;
 	public ExtentTest extentTest;
 
+	//Code to open the browser and adds the URL
 	@BeforeTest
 	public void openBrowser() {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--force-device-scale-factor=0.8");
+		options.addArguments("--force-device-scale-factor=1.0");
 		Reporter.log("openBrowser", true);
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
@@ -46,6 +45,7 @@ public class BaseClass {
 		extent.addSystemInfo("Environment", "QA");
 	}
 
+	//Code to read the file
 	@BeforeMethod
 	public void login() throws Exception {
 		Reporter.log("login", true);
@@ -74,34 +74,32 @@ public class BaseClass {
 	
 	@AfterMethod
 	public void logout(ITestResult result) throws InterruptedException, IOException {
+		
 		Reporter.log("logout", true);
 		HomePage h = new HomePage(driver);
 		Thread.sleep(5000);
 		h.setLogout();
-		if(result.getStatus()==ITestResult.FAILURE){
-			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getName()); //to add name in extent report
-			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getThrowable()); //to add error/exception in extent report
+//		if(result.getStatus()==ITestResult.FAILURE){
+//			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getName()); //to add name in extent report
+//			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getThrowable()); //to add error/exception in extent report
 			
-			String screenshotPath = ScreenshotCode.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath)); //to add screenshot in extent report
+			//String screenshotPath = ScreenshotCode.getScreenshot(driver, result.getName());
+			//extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath)); //to add screenshot in extent report
 			//extentTest.log(LogStatus.FAIL, extentTest.addScreencast(screenshotPath)); //to add screencast/video in extent report
-		}
-		else if(result.getStatus()==ITestResult.SKIP){
-			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
-		}
-		else if(result.getStatus()==ITestResult.SUCCESS){
-			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
-
-		}
-		
-		
-		extent.endTest(extentTest); //ending test and ends the current test and prepare to create html report
+//		}
+//		else if(result.getStatus()==ITestResult.SKIP){
+//			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
+//		}
+//		else if(result.getStatus()==ITestResult.SUCCESS){
+//			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
+//		}
+//		extent.endTest(extentTest); //ending test and ends the current test and prepare to create html report
 	}
 
 	@AfterTest
 	public void closeBrowser() {
 		Reporter.log("closeBrowser", true);
-		driver.close();
+		driver.quit();
 	}
 
 //	@AfterSuite

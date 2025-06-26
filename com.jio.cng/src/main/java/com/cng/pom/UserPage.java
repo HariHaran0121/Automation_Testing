@@ -105,9 +105,17 @@ public class UserPage {
 	private WebElement edit_Password;
 	
 	
+	@FindBy(xpath="//span[text()=' User with User Name already exists, please use a different Username ']")
+	private WebElement userNameWarning;
+	
+
+	@FindBy(xpath="//span[text()=' User with email already exists, please use a different Email ']")
+	private WebElement userEmailWarning;
+
 	
 	@FindBy(xpath="(//clr-dg-row[@role='rowgroup'])[1]/div[1]/div[2]/div[1]/clr-dg-cell[9]/button[1]")	
 	private WebElement delete_user;
+	
 
 	public UserPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -216,6 +224,22 @@ public class UserPage {
 		delete_user.click();
 		return verify_user_email.getText();
 		
+	}
+	
+
+	public void validateDuplicateData(String user_name, String email) throws InterruptedException
+	{
+		userspage.click();
+		Thread.sleep(7000);
+		addUserBtn.click();
+		Thread.sleep(3000);
+		addUserName.sendKeys(user_name);
+		Thread.sleep(3000);		
+		addUserEmail.sendKeys(email);
+		Thread.sleep(3000);
+		userNameWarning.isDisplayed();
+		addFirstName.click();
+		userEmailWarning.isDisplayed();
 	}
 	
 }

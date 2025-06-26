@@ -32,10 +32,4 @@ public class FileLib {
 		FileInputStream userdata = new FileInputStream("./testdata/userdata.xlsx");
 		
 	}
-	
-	
-	
-	
-	
-	
 }

@@ -12,7 +12,8 @@ import org.openqa.selenium.support.PageFactory;
 public class CustomerPage {
 
 	Robot robot;
-	
+	public WebDriver driver;
+
 	@FindBy(xpath="//clr-icon[@title='Customers']")
 	private WebElement select_Customer;
 
@@ -118,7 +119,7 @@ public class CustomerPage {
 	addCusbtn.click();
 	Thread.sleep(2000);
 	customerName.sendKeys("spark12345");
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 	otherCus.click();
 	Thread.sleep(2000);
 	chooseOther.click();

@@ -11,9 +11,9 @@ import org.testng.asserts.SoftAssert;
 import com.cng.generic.BaseClass;
 import com.cng.generic.FileLib;
 import com.cng.pom.AssertManagmentPage;
-import com.cng.pom.CustomerConfig;
+import com.cng.pom.CustomerConfigPage;
 import com.cng.pom.CustomerPage;
-import com.cng.pom.DatasetManagment;
+import com.cng.pom.DatasetManagmentPage;
 import com.cng.pom.SitePage;
 import com.cng.pom.UserPage;
 import com.cng.pom.UserSessionsPage;
@@ -161,7 +161,7 @@ public class TestScript extends BaseClass {
 	}
 	
 	
-	//code to delete a user only if AddUsersPage method works. <Make sure remove the enabled = false>
+	//code to delete a user only if AddUsersPage method works. <Make sure change enabled = false into enabled = true>
 	@Test(dependsOnMethods = "testAddUsersPage", enabled=false)
 	@Epic("EP004")
 	@Story("User Page")
@@ -195,7 +195,7 @@ public class TestScript extends BaseClass {
 	@Severity(SeverityLevel.MINOR)
 	public void testCustomerConfigPage()
 	{
-		CustomerConfig config = new CustomerConfig(driver);
+		CustomerConfigPage config = new CustomerConfigPage(driver);
 		config.customerCongif();
 	}
 	
@@ -207,7 +207,7 @@ public class TestScript extends BaseClass {
 	@Severity(SeverityLevel.MINOR)
 	public void testDatasetManagmentPage() throws InterruptedException
 	{
-		DatasetManagment ds = new DatasetManagment(driver);
+		DatasetManagmentPage ds = new DatasetManagmentPage(driver);
 		ds.setDatasetPage();
 	}
 		

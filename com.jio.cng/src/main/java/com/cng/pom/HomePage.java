@@ -12,7 +12,17 @@ public class HomePage {
 
 	@FindBy(xpath = "//span[text()='Log out']")
 	private WebElement lgOutbtn;
+	
+	@FindBy(id = "userName")
+	private WebElement untbx;
 
+	@FindBy(id = "password")
+	private WebElement pwtbx;
+
+	@FindBy(xpath = "//button[text()=' Login ']")
+	private WebElement lgBtn;
+	
+	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -23,5 +33,6 @@ public class HomePage {
 		Thread.sleep(1000);
 		lgOutbtn.click();
 	}
+	
 
 }
