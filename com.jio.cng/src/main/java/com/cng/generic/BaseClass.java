@@ -34,7 +34,7 @@ public class BaseClass {
 	@BeforeTest
 	public void openBrowser() {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--force-device-scale-factor=1.0");
+		options.addArguments("--force-device-scale-factor=1.3");
 		Reporter.log("openBrowser", true);
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));

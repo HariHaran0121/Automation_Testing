@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="11" passed="2" failed="1" skipped="0">
+<testng-results ignored="10" total="11" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[openBrowser]]>
@@ -11,123 +11,37 @@
       <![CDATA[logout]]>
     </line>
     <line>
-      <![CDATA[login]]>
-    </line>
-    <line>
-      <![CDATA[logout]]>
-    </line>
-    <line>
-      <![CDATA[login]]>
-    </line>
-    <line>
-      <![CDATA[logout]]>
-    </line>
-    <line>
       <![CDATA[closeBrowser]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-26T17:16:46 IST" name="Suite" finished-at="2025-06-26T17:18:17 IST" duration-ms="91078">
+  <suite started-at="2025-06-26T17:51:15 IST" name="Default suite" finished-at="2025-06-26T17:52:08 IST" duration-ms="52190">
     <groups>
     </groups>
-    <test started-at="2025-06-26T17:16:46 IST" name="Test" finished-at="2025-06-26T17:18:17 IST" duration-ms="91078">
+    <test started-at="2025-06-26T17:51:15 IST" name="Default test" finished-at="2025-06-26T17:52:08 IST" duration-ms="52190">
       <class name="com.cng.testscript.TestScript">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:16:46 IST" name="openBrowser" finished-at="2025-06-26T17:16:49 IST" duration-ms="2371" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.cng.testscript.TestScript@2257fadf]" started-at="2025-06-26T17:51:16 IST" name="openBrowser" finished-at="2025-06-26T17:51:18 IST" duration-ms="2441" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[openBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:16:49 IST" name="login" finished-at="2025-06-26T17:16:55 IST" duration-ms="5885" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.TestScript@2257fadf]" started-at="2025-06-26T17:51:18 IST" name="login" finished-at="2025-06-26T17:51:23 IST" duration-ms="5253" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[login]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="testCustomerPage()[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:16:55 IST" name="testCustomerPage" finished-at="2025-06-26T17:17:09 IST" duration-ms="14720" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input aria-autocomplete="list" type="text" autocorrect="off" autocapitalize="off" autocomplete="a980ce93aa3b"> is not clickable at point (1270, 283). Other element would receive the click: <div class="loader-spinner-wrpr ng-star-inserted">...</div>
-  (Session info: chrome=137.0.7151.119)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac27a19ec1d7d1725d043e0a555ccf03, clickElement {id=f.3AACEB46EBF14813A0033C0DE2D80B7C.d.92DF4EC186CD11C91830F3180D48A459.e.110}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32921/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (ac27a19ec1d7d1725d043e0a555ccf03)] -> xpath: //div[@role='combobox']/input]
-Session ID: ac27a19ec1d7d1725d043e0a555ccf03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input aria-autocomplete="list" type="text" autocorrect="off" autocapitalize="off" autocomplete="a980ce93aa3b"> is not clickable at point (1270, 283). Other element would receive the click: <div class="loader-spinner-wrpr ng-star-inserted">...</div>
-  (Session info: chrome=137.0.7151.119)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac27a19ec1d7d1725d043e0a555ccf03, clickElement {id=f.3AACEB46EBF14813A0033C0DE2D80B7C.d.92DF4EC186CD11C91830F3180D48A459.e.110}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32921/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (ac27a19ec1d7d1725d043e0a555ccf03)] -> xpath: //div[@role='combobox']/input]
-Session ID: ac27a19ec1d7d1725d043e0a555ccf03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy24.click(Unknown Source)
-at com.cng.pom.CustomerPage.setAddCustomer(CustomerPage.java:123)
-at com.cng.testscript.TestScript.testCustomerPage(TestScript.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="testCustomerPage()[pri:0, instance:com.cng.testscript.TestScript@2257fadf]" started-at="2025-06-26T17:51:23 IST" name="testCustomerPage" finished-at="2025-06-26T17:51:58 IST" duration-ms="34800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerPage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:17:10 IST" name="logout" finished-at="2025-06-26T17:17:19 IST" duration-ms="9241" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@2257fadf]" started-at="2025-06-26T17:51:58 IST" name="logout" finished-at="2025-06-26T17:52:07 IST" duration-ms="9255" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCustomerPage status=FAILURE method=TestScript.testCustomerPage()[pri:0, instance:com.cng.testscript.TestScript@a20b94b] output={null}]]]>
+                <![CDATA[[TestResult name=testCustomerPage status=SUCCESS method=TestScript.testCustomerPage()[pri:0, instance:com.cng.testscript.TestScript@2257fadf] output={null}]]]>
               </value>
             </param>
           </params>
@@ -137,135 +51,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:17:19 IST" name="login" finished-at="2025-06-26T17:17:24 IST" duration-ms="5019" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[login]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="testSitePage()[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:17:24 IST" name="testSitePage" finished-at="2025-06-26T17:17:41 IST" duration-ms="17206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSitePage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:17:41 IST" name="logout" finished-at="2025-06-26T17:17:50 IST" duration-ms="9260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testSitePage status=SUCCESS method=TestScript.testSitePage()[pri:0, instance:com.cng.testscript.TestScript@a20b94b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[logout]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:17:50 IST" name="login" finished-at="2025-06-26T17:17:54 IST" duration-ms="3774" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[login]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="testUserSessionPage()[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:17:54 IST" name="testUserSessionPage" finished-at="2025-06-26T17:18:07 IST" duration-ms="12853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUserSessionPage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:18:07 IST" name="logout" finished-at="2025-06-26T17:18:17 IST" duration-ms="10189" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testUserSessionPage status=SUCCESS method=TestScript.testUserSessionPage()[pri:0, instance:com.cng.testscript.TestScript@a20b94b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span _ngcontent-oon-c3="">...</span> is not clickable at point (2359, 133). Other element would receive the click: <div class="toast-content">...</div>
-  (Session info: chrome=137.0.7151.119)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac27a19ec1d7d1725d043e0a555ccf03, clickElement {id=f.3AACEB46EBF14813A0033C0DE2D80B7C.d.228AC67A6FB89F76A2A396BB1C98F722.e.526}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32921/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (ac27a19ec1d7d1725d043e0a555ccf03)] -> xpath: //span[text()='Log out']]
-Session ID: ac27a19ec1d7d1725d043e0a555ccf03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span _ngcontent-oon-c3="">...</span> is not clickable at point (2359, 133). Other element would receive the click: <div class="toast-content">...</div>
-  (Session info: chrome=137.0.7151.119)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac27a19ec1d7d1725d043e0a555ccf03, clickElement {id=f.3AACEB46EBF14813A0033C0DE2D80B7C.d.228AC67A6FB89F76A2A396BB1C98F722.e.526}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32921/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (ac27a19ec1d7d1725d043e0a555ccf03)] -> xpath: //span[text()='Log out']]
-Session ID: ac27a19ec1d7d1725d043e0a555ccf03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy24.click(Unknown Source)
-at com.cng.pom.HomePage.setLogout(HomePage.java:34)
-at com.cng.generic.BaseClass.logout(BaseClass.java:81)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-            <line>
-              <![CDATA[logout]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.cng.testscript.TestScript@a20b94b]" started-at="2025-06-26T17:18:17 IST" name="closeBrowser" finished-at="2025-06-26T17:18:17 IST" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.cng.testscript.TestScript@2257fadf]" started-at="2025-06-26T17:52:07 IST" name="closeBrowser" finished-at="2025-06-26T17:52:08 IST" duration-ms="125" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[closeBrowser]]>
@@ -273,6 +59,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.cng.testscript.TestScript -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

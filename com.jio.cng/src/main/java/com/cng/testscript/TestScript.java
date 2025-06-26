@@ -98,7 +98,10 @@ public class TestScript extends BaseClass {
 	
 		UserPage user = new UserPage(driver);
 		FileLib excel = new FileLib();
+		
 		String user_name = excel.getExcelData("userdata", 1, 0);
+		
+		
 		String email = excel.getExcelData("userdata", 1, 1);
 		String first_name = excel.getExcelData("userdata", 1, 2);
 		String last_name = excel.getExcelData("userdata", 1, 3);

@@ -8,60 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">91,078</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">52,190</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.cng.testscript.TestScript</td><td><a href="#m0">logout</a></td><td rowspan="1">1750938487396</td><td rowspan="1">10189</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cng.testscript.TestScript</td><td><a href="#m1">testCustomerPage</a></td><td rowspan="1">1750938415127</td><td rowspan="1">14720</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.cng.testscript.TestScript</td><td><a href="#m2">testSitePage</a></td><td rowspan="1">1750938444297</td><td rowspan="1">17206</td></tr><tr class="passedeven"><td><a href="#m3">testUserSessionPage</a></td><td rowspan="1">1750938474541</td><td rowspan="1">12853</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.cng.testscript.TestScript</td><td><a href="#m0">testCustomerPage</a></td><td rowspan="1">1750940483869</td><td rowspan="1">34800</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.cng.testscript.TestScript#logout</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=testUserSessionPage status=SUCCESS method=TestScript.testUserSessionPage()[pri:0, instance:com.cng.testscript.TestScript@a20b94b] output={null}]</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">logout</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-oon-c3=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (2359, 133). Other element would receive the click: &lt;div class=&quot;toast-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=137.0.7151.119)
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac27a19ec1d7d1725d043e0a555ccf03, clickElement {id=f.3AACEB46EBF14813A0033C0DE2D80B7C.d.228AC67A6FB89F76A2A396BB1C98F722.e.526}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32921/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (ac27a19ec1d7d1725d043e0a555ccf03)] -&gt; xpath: //span[text()=&apos;Log out&apos;]]
-Session ID: ac27a19ec1d7d1725d043e0a555ccf03
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.cng.pom.HomePage.setLogout(HomePage.java:34)
-	at com.cng.generic.BaseClass.logout(BaseClass.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.cng.testscript.TestScript#testCustomerPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input aria-autocomplete=&quot;list&quot; type=&quot;text&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; autocomplete=&quot;a980ce93aa3b&quot;&gt; is not clickable at point (1270, 283). Other element would receive the click: &lt;div class=&quot;loader-spinner-wrpr ng-star-inserted&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=137.0.7151.119)
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac27a19ec1d7d1725d043e0a555ccf03, clickElement {id=f.3AACEB46EBF14813A0033C0DE2D80B7C.d.92DF4EC186CD11C91830F3180D48A459.e.110}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32921/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (ac27a19ec1d7d1725d043e0a555ccf03)] -&gt; xpath: //div[@role=&apos;combobox&apos;]/input]
-Session ID: ac27a19ec1d7d1725d043e0a555ccf03
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.cng.pom.CustomerPage.setAddCustomer(CustomerPage.java:123)
-	at com.cng.testscript.TestScript.testCustomerPage(TestScript.java:49)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.cng.testscript.TestScript#testSitePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.cng.testscript.TestScript#testUserSessionPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.cng.testscript.TestScript#testCustomerPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
