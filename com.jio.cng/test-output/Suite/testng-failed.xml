@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.cng.testscript.Login">
+      <class name="com.cng.testscript.TestScript">
         <methods>
+          <include name="testCustomerPage"/>
           <include name="openBrowser"/>
-          <include name="checkWarning"/>
           <include name="login"/>
           <include name="logout"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.cng.testscript.Login -->
+      </class> <!-- com.cng.testscript.TestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
