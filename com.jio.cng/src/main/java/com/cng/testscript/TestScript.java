@@ -19,12 +19,6 @@ import com.cng.pom.UserPage;
 import com.cng.pom.UserSessionsPage;
 
 import io.qameta.allure.Allure;
-import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
 
 
 @Listeners({com.cng.utils.ExtentReporterNG.class, com.cng.generic.Listerner.class}) 

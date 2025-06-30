@@ -55,21 +55,21 @@ public class ConsolidateDashboard extends BaseClass {
 	}
 
 // Code to check the outlet status 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void outletStatus() throws InterruptedException {
 		cdp = new ConsolidateDashboardPage(driver);
 		cdp.setoutletList();
 	}
 
 // Code to check the camera status 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void cameraStatus() throws InterruptedException {
 		cdp = new ConsolidateDashboardPage(driver);
 		cdp.setCameraStatus();
 	}
 
 // Code to download Web User Manual and Alert Compliance Report 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void exportData() throws InterruptedException {
 		String home_Page = driver.getWindowHandle();
 		cdp = new ConsolidateDashboardPage(driver);
@@ -77,7 +77,7 @@ public class ConsolidateDashboard extends BaseClass {
 	}
 
 //Code to read and compare all the usecase list from the dashoard cards under "All violation based on Criticality" and from the excel sheet.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void usecaseList() throws EncryptedDocumentException, IOException {
 		List<WebElement> elements = driver.findElements(
 				By.xpath("//div[@class='dashboard-tile has-cont-busy-ind ng-star-inserted']/div[1]/div[1]/span[1]"));
