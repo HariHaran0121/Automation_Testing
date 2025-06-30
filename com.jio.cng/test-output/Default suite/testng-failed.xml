@@ -8,8 +8,8 @@
           <include name="testCustomerPage"/>
           <include name="openBrowser"/>
           <include name="closeBrowser"/>
-          <include name="login"/>
           <include name="logout"/>
+          <include name="login"/>
         </methods>
       </class> <!-- com.cng.testscript.TestScript -->
     </classes>

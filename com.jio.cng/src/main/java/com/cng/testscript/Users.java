@@ -23,7 +23,6 @@ public class Users extends BaseClass {
 
 	// ********************USERS Page with valid data********************
 	@Test(enabled = false)
-	@Epic("EP004")
 	@Story("User Page")
 	@Feature("Feature  : Checking the users creation page")
 	@Description("This page contains to create , edit and delete the user details.")
@@ -54,7 +53,6 @@ public class Users extends BaseClass {
 	}
 
 	@Test(dependsOnMethods = "testAddUsersPage", enabled = false)
-	@Epic("EP004")
 	@Story("User Page")
 	public void testEditUserDetails() throws InterruptedException, EncryptedDocumentException, IOException {
 		user = new UserPage(driver);
@@ -77,7 +75,6 @@ public class Users extends BaseClass {
 	}
 
 	@Test(dependsOnMethods = "testEditUserDetails", enabled = false)
-	@Epic("EP004")
 	@Story("User Page")
 	public void testUserDetails() throws InterruptedException {
 		user = new UserPage(driver);
@@ -85,7 +82,6 @@ public class Users extends BaseClass {
 	}
 
 	@Test(dependsOnMethods = "testUserDetails", enabled = false)
-	@Epic("EP004")
 	@Story("User Page")
 	public void testUserPasswordReset() throws InterruptedException {
 		user = new UserPage(driver);
@@ -95,7 +91,6 @@ public class Users extends BaseClass {
 	// code to delete a user only if AddUsersPage method works. <Make sure change
 	// enabled = false into enabled = true>
 	@Test(dependsOnMethods = "testAddUsersPage", enabled = false)
-	@Epic("EP004")
 	@Story("User Page")
 	public void testDeleteUser() throws EncryptedDocumentException, IOException {
 		user = new UserPage(driver);
@@ -114,8 +109,8 @@ public class Users extends BaseClass {
 		user = new UserPage(driver);
 		FileLib excel = new FileLib();
 		String user_name = excel.getExcelData("userdata", 3, 0);
-		System.out.println(user_name);
 		String email = excel.getExcelData("userdata", 3, 1);
+		Thread.sleep(1000);
 		user.validateDuplicateData(user_name, email);
 		
 	}

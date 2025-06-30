@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 26 17:35:45 IST 2025</td>
+<td>Started on:</td><td>Mon Jun 30 13:20:11 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>88 seconds (88502 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38525 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,16 +76,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.cng.testscript.TestScript.testCustomerPage()'><b>testCustomerPage</b><br>Test class: com.cng.testscript.TestScript</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input aria-autocomplete=&quot;list&quot; type=&quot;text&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; autocomplete=&quot;abb5a6760091&quot;&gt; is not clickable at point (1270, 283). Other element would receive the click: &lt;div class=&quot;loader-spinner-wrpr ng-star-inserted&quot;&gt;...&lt;/div&gt;
+<td title='com.cng.testscript.Users.logout()'><b>logout</b><br>Test class: com.cng.testscript.Users<br>Parameters: [TestResult name=testDuplicateData status=SUCCESS method=Users.testDuplicateData()[pri:0, instance:com.cng.testscript.Users@4647881c] output={null}]<br/>
+<a href="#Output-394663183" onClick='toggleBox("Output-394663183", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-394663183" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-394663183">
+logout<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div _ngcontent-eiy-c3=&quot;&quot; class=&quot;header-actions&quot;&gt;...&lt;/div&gt; is not clickable at point (1869, 37). Other element would receive the click: &lt;div _ngcontent-eiy-c1=&quot;&quot; class=&quot;modal-backdrop ng-trigger ng-trigger-fade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
   (Session info: chrome=137.0.7151.119)
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [22511a665b1aaddb4f03cb69bab4877f, clickElement {id=f.92BE6E1E1A012B3B2865F3C4C5A50662.d.FB49F0F8045C1CE85614A9403332C47B.e.108}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39839/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (22511a665b1aaddb4f03cb69bab4877f)] -&gt; xpath: //div[@role=&apos;combobox&apos;]/input]
-Session ID: 22511a665b1aaddb4f03cb69bab4877f
+Command: [cc590a778db946a286a6db7963a9938f, clickElement {id=f.09DF19DAC949F2BFA3A377CB2D238830.d.F9E3F66119E30EB93665B70AA8A8C641.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43509/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (cc590a778db946a286a6db7963a9938f)] -&gt; xpath: //div[@class=&apos;header-actions&apos;]]
+Session ID: cc590a778db946a286a6db7963a9938f
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -96,20 +103,20 @@ Session ID: 22511a665b1aaddb4f03cb69bab4877f
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.cng.pom.CustomerPage.setAddCustomer(CustomerPage.java:123)
-	at com.cng.testscript.TestScript.testCustomerPage(TestScript.java:49)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.cng.pom.HomePage.setLogout(HomePage.java:32)
+	at com.cng.generic.BaseClass.logout(BaseClass.java:81)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace748673892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace748673892'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input aria-autocomplete=&quot;list&quot; type=&quot;text&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; autocomplete=&quot;abb5a6760091&quot;&gt; is not clickable at point (1270, 283). Other element would receive the click: &lt;div class=&quot;loader-spinner-wrpr ng-star-inserted&quot;&gt;...&lt;/div&gt;
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace394663183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394663183'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div _ngcontent-eiy-c3=&quot;&quot; class=&quot;header-actions&quot;&gt;...&lt;/div&gt; is not clickable at point (1869, 37). Other element would receive the click: &lt;div _ngcontent-eiy-c1=&quot;&quot; class=&quot;modal-backdrop ng-trigger ng-trigger-fade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
   (Session info: chrome=137.0.7151.119)
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [22511a665b1aaddb4f03cb69bab4877f, clickElement {id=f.92BE6E1E1A012B3B2865F3C4C5A50662.d.FB49F0F8045C1CE85614A9403332C47B.e.108}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39839/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (22511a665b1aaddb4f03cb69bab4877f)] -&gt; xpath: //div[@role=&apos;combobox&apos;]/input]
-Session ID: 22511a665b1aaddb4f03cb69bab4877f
+Command: [cc590a778db946a286a6db7963a9938f, clickElement {id=f.09DF19DAC949F2BFA3A377CB2D238830.d.F9E3F66119E30EB93665B70AA8A8C641.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43509/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (cc590a778db946a286a6db7963a9938f)] -&gt; xpath: //div[@class=&apos;header-actions&apos;]]
+Session ID: cc590a778db946a286a6db7963a9938f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -128,15 +135,20 @@ Session ID: 22511a665b1aaddb4f03cb69bab4877f
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.cng.pom.CustomerPage.setAddCustomer(CustomerPage.java:123)
-	at com.cng.testscript.TestScript.testCustomerPage(TestScript.java:49)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.cng.pom.HomePage.setLogout(HomePage.java:32)
+	at com.cng.generic.BaseClass.logout(BaseClass.java:81)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -160,8 +172,8 @@ Session ID: 22511a665b1aaddb4f03cb69bab4877f
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>14</td>
-<td>com.cng.testscript.TestScript@a20b94b</td></tr>
+<td>9</td>
+<td>com.cng.testscript.Users@4647881c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -172,15 +184,10 @@ Session ID: 22511a665b1aaddb4f03cb69bab4877f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.cng.testscript.TestScript.testSitePage()'><b>testSitePage</b><br>Test class: com.cng.testscript.TestScript</td>
+<td title='com.cng.testscript.Users.testDuplicateData()'><b>testDuplicateData</b><br>Test class: com.cng.testscript.Users</td>
 <td></td>
-<td>17</td>
-<td>com.cng.testscript.TestScript@a20b94b</td></tr>
-<tr>
-<td title='com.cng.testscript.TestScript.testUserSessionPage()'><b>testUserSessionPage</b><br>Test class: com.cng.testscript.TestScript</td>
-<td></td>
-<td>12</td>
-<td>com.cng.testscript.TestScript@a20b94b</td></tr>
+<td>19</td>
+<td>com.cng.testscript.Users@4647881c</td></tr>
 </table><p>
 </body>
 </html>

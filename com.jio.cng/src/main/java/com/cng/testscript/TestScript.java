@@ -35,11 +35,6 @@ public class TestScript extends BaseClass {
 	
 	// ************Customer Page********************
 	@Test(enabled=true)
-	@Epic("EP001")
-	@Story("Customer Page")
-	@Feature("Feature 1 : Adding Customer in the portal")
-	@Description("This page contains the details of the customer page and we can create , edit and delete the customer information.")
-	@Severity(SeverityLevel.MINOR)
 	public void testCustomerPage() throws Exception {
 		Allure.label("tag", "Customer Page");
 		Allure.label("tag", "Customer Details");
@@ -51,11 +46,6 @@ public class TestScript extends BaseClass {
 
 	// ****************SITE PAGE********************
 	@Test(enabled=true)
-	@Epic("EP002")
-	@Story("Site Page")
-	@Feature("Feature 2 : Adding Site in the portal")
-	@Description("This page contains the details of the site page and we can create , edit and delete the site information.")
-	@Severity(SeverityLevel.NORMAL)
 	public void testSitePage() throws Exception{	
 		Allure.label("tag", "Site Page");
 		Allure.label("tag", "Site Details");
@@ -74,11 +64,6 @@ public class TestScript extends BaseClass {
 	
 	// ********************UserSession Page************************
 	@Test(enabled=true)
-	@Epic("EP003")
-	@Story("UserSession Page")
-	@Feature("Feature 3 : Checking the users activities")
-	@Description("This page contains the details of the user when they have logged in and logged out. The time stamp will be saved in the table.")
-	@Severity(SeverityLevel.MINOR)
 	public void testUserSessionPage() throws InterruptedException, AWTException
 	{
 		UserSessionsPage us = new UserSessionsPage(driver);
@@ -89,11 +74,6 @@ public class TestScript extends BaseClass {
 
 	// ********************USERS Page********************
 	@Test(enabled=false)
-	@Epic("EP004")
-	@Story("User Page")
-	@Feature("Feature  : Checking the users creation page")
-	@Description("This page contains to create , edit and delete the user details.")
-	@Severity(SeverityLevel.MINOR)
 	public void testAddUsersPage() throws InterruptedException, EncryptedDocumentException, IOException {
 	
 		UserPage user = new UserPage(driver);
@@ -123,8 +103,6 @@ public class TestScript extends BaseClass {
 	}
 		
 	@Test(dependsOnMethods="testAddUsersPage", enabled=false)
-	@Epic("EP004")
-	@Story("User Page")
 	public void testEditUserDetails() throws InterruptedException, EncryptedDocumentException, IOException 
 	{
 		UserPage user = new UserPage(driver);
@@ -146,8 +124,6 @@ public class TestScript extends BaseClass {
 	}
 	
 	@Test(dependsOnMethods = "testEditUserDetails", enabled=false)
-	@Epic("EP004")
-	@Story("User Page")
 	public void testUserDetails() throws InterruptedException
 	{
 		UserPage user = new UserPage(driver);
@@ -155,8 +131,6 @@ public class TestScript extends BaseClass {
 	}
 	
 	@Test(dependsOnMethods = "testUserDetails", enabled=false)
-	@Epic("EP004")
-	@Story("User Page")
 	public void testUserPasswordReset() throws InterruptedException
 	{
 		UserPage user = new UserPage(driver);
@@ -166,8 +140,6 @@ public class TestScript extends BaseClass {
 	
 	//code to delete a user only if AddUsersPage method works. <Make sure change enabled = false into enabled = true>
 	@Test(dependsOnMethods = "testAddUsersPage", enabled=false)
-	@Epic("EP004")
-	@Story("User Page")
 	public void testDeleteUser() throws EncryptedDocumentException, IOException
 	{
 		UserPage user = new UserPage(driver);
@@ -179,11 +151,7 @@ public class TestScript extends BaseClass {
 	}
 	
 	@Test(enabled=false)
-	@Epic("EP005")
-	@Story("Assert Managment")
-	@Feature("Feature 4 : Checking the Assert managment page")
-	@Description("This page contains the details of the user when they have logged in and logged out. The time stamp will be saved in the table.")
-	@Severity(SeverityLevel.MINOR)
+
 	public void testAssertManagmentPage() throws InterruptedException
 	{
 		AssertManagmentPage amp = new AssertManagmentPage(driver);
@@ -191,11 +159,7 @@ public class TestScript extends BaseClass {
 	}
 	
 	@Test(enabled=false)
-	@Epic("EP006")
-	@Story("Customer Config")
-	@Feature("Feature 5 : Checking the congifuartion of the users [Notification , Supress and Schedule alerts]")
-	@Description("This page contains the details of the Customer configuration where we can modify their notification and alert status.")
-	@Severity(SeverityLevel.MINOR)
+	
 	public void testCustomerConfigPage()
 	{
 		CustomerConfigPage config = new CustomerConfigPage(driver);
@@ -203,11 +167,7 @@ public class TestScript extends BaseClass {
 	}
 	
 	@Test(enabled=false)
-	@Epic("EP007")
-	@Story("Dataset Managment")
-	@Feature("Feature 6 : Cheacking the Dataset Managment")
-	@Description("Looking for the discription for this page")
-	@Severity(SeverityLevel.MINOR)
+	
 	public void testDatasetManagmentPage() throws InterruptedException
 	{
 		DatasetManagmentPage ds = new DatasetManagmentPage(driver);

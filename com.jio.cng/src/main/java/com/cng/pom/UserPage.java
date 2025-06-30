@@ -240,6 +240,7 @@ public class UserPage {
 		userNameWarning.isDisplayed();
 		addFirstName.click();
 		userEmailWarning.isDisplayed();
+		canclebtn.click();
 	}
 	
 }
