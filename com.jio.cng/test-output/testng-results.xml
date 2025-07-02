@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="17" passed="9" failed="0" skipped="0">
+<testng-results ignored="16" total="17" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[openBrowser]]>
@@ -14,161 +14,41 @@
       <![CDATA[closeBrowser]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-02T13:00:23 IST" name="Default suite" finished-at="2025-07-02T13:03:26 IST" duration-ms="182810">
+  <suite started-at="2025-07-02T16:07:44 IST" name="Default suite" finished-at="2025-07-02T16:08:16 IST" duration-ms="32137">
     <groups>
     </groups>
-    <test started-at="2025-07-02T13:00:23 IST" name="Default test" finished-at="2025-07-02T13:03:26 IST" duration-ms="182810">
+    <test started-at="2025-07-02T16:07:44 IST" name="Default test" finished-at="2025-07-02T16:08:16 IST" duration-ms="32137">
       <class name="com.cng.testscript.TestScript">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:23 IST" name="openBrowser" finished-at="2025-07-02T13:00:26 IST" duration-ms="2511" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-02T16:07:44 IST" name="openBrowser" finished-at="2025-07-02T16:07:46 IST" duration-ms="2471" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[openBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:26 IST" name="login" finished-at="2025-07-02T13:00:31 IST" duration-ms="5273" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-02T16:07:46 IST" name="login" finished-at="2025-07-02T16:07:52 IST" duration-ms="5047" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[login]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="cameraStatus()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:31 IST" name="cameraStatus" finished-at="2025-07-02T13:00:51 IST" duration-ms="20281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cameraStatus -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:51 IST" name="logout" finished-at="2025-07-02T13:00:51 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=cameraStatus status=SUCCESS method=TestScript.cameraStatus()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="dummy()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:51 IST" name="dummy" finished-at="2025-07-02T13:00:56 IST" duration-ms="5035" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dummy -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:56 IST" name="logout" finished-at="2025-07-02T13:00:56 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dummy status=SUCCESS method=TestScript.dummy()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="exportData()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:56 IST" name="exportData" finished-at="2025-07-02T13:00:58 IST" duration-ms="1510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exportData -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:58 IST" name="logout" finished-at="2025-07-02T13:00:58 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=exportData status=SUCCESS method=TestScript.exportData()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="outletStatus()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:00:58 IST" name="outletStatus" finished-at="2025-07-02T13:01:18 IST" duration-ms="20104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- outletStatus -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:01:18 IST" name="logout" finished-at="2025-07-02T13:01:18 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=outletStatus status=SUCCESS method=TestScript.outletStatus()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="reports()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:01:18 IST" name="reports" finished-at="2025-07-02T13:01:29 IST" duration-ms="11015" status="PASS">
+        <test-method signature="reports()[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-02T16:07:52 IST" name="reports" finished-at="2025-07-02T16:08:06 IST" duration-ms="14950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reports -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:01:29 IST" name="logout" finished-at="2025-07-02T13:01:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-02T16:08:06 IST" name="logout" finished-at="2025-07-02T16:08:06 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=reports status=SUCCESS method=TestScript.reports()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
+                <![CDATA[[TestResult name=reports status=SUCCESS method=TestScript.reports()[pri:0, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="testCustomerPage()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:01:29 IST" name="testCustomerPage" finished-at="2025-07-02T13:02:03 IST" duration-ms="34574" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCustomerPage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:02:03 IST" name="logout" finished-at="2025-07-02T13:02:03 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testCustomerPage status=SUCCESS method=TestScript.testCustomerPage()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="testSitePage()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:02:03 IST" name="testSitePage" finished-at="2025-07-02T13:02:17 IST" duration-ms="13292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSitePage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:02:17 IST" name="logout" finished-at="2025-07-02T13:02:17 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testSitePage status=SUCCESS method=TestScript.testSitePage()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="testUserSessionPage()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:02:17 IST" name="testUserSessionPage" finished-at="2025-07-02T13:02:26 IST" duration-ms="9412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUserSessionPage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:02:26 IST" name="logout" finished-at="2025-07-02T13:02:26 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testUserSessionPage status=SUCCESS method=TestScript.testUserSessionPage()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="usecaseList()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:02:26 IST" name="usecaseList" finished-at="2025-07-02T13:03:16 IST" duration-ms="50046" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- usecaseList -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:03:16 IST" name="logout" finished-at="2025-07-02T13:03:16 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=usecaseList status=SUCCESS method=TestScript.usecaseList()[pri:0, instance:com.cng.testscript.TestScript@655523dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.cng.testscript.TestScript@655523dd]" started-at="2025-07-02T13:03:16 IST" name="closeBrowser" finished-at="2025-07-02T13:03:26 IST" duration-ms="9473" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-02T16:08:06 IST" name="closeBrowser" finished-at="2025-07-02T16:08:16 IST" duration-ms="9386" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[logout]]>

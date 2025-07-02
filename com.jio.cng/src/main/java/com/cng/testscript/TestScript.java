@@ -29,6 +29,11 @@ import com.cng.pom.UserPage;
 import com.cng.pom.UserSessionsPage;
 
 import io.qameta.allure.Allure;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 
 @Listeners({ com.cng.utils.ExtentReporterNG.class, com.cng.generic.Listerner.class })
 
@@ -37,12 +42,16 @@ public class TestScript extends BaseClass {
 	ConsolidateDashboardPage cdp;
 
 // Code to check the broken image links in the consolidate dashboard.	
+	@Epic("")
+	@Story("Broken Image")
+	@Description("It checks for the broken images in the consolidate dashboard")
+	@Severity(SeverityLevel.MINOR)
 	@SuppressWarnings("deprecation")
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void dummy() throws Exception {
 		Thread.sleep(2000);
 		List<WebElement> images = driver.findElements(By.tagName("img"));
-		//System.out.println(images.size());
+		// System.out.println(images.size());
 
 		for (WebElement image : images) {
 			String imageSrc = image.getAttribute("src");
@@ -61,26 +70,37 @@ public class TestScript extends BaseClass {
 			} catch (IOException e) {
 				Reporter.log(imageSrc);
 			}
-
 		}
 	}
 
 // Code to check the outlet status 
-	@Test(enabled = true)
+	@Epic("")
+	@Story("Outlet Status")
+	@Description("Checks the outlet status in the Consolidate Dashboard.")
+	@Severity(SeverityLevel.MINOR)
+	@Test(enabled = false)
 	public void outletStatus() throws InterruptedException {
 		cdp = new ConsolidateDashboardPage(driver);
 		cdp.setoutletList();
 	}
 
 // Code to check the camera status 
-	@Test(enabled = true)
+	@Epic("")
+	@Story("Camera Status")
+	@Description("Checks the Camera Status status in the Consolidate Dashboard.")
+	@Severity(SeverityLevel.MINOR)
+	@Test(enabled = false)
 	public void cameraStatus() throws InterruptedException {
 		cdp = new ConsolidateDashboardPage(driver);
 		cdp.setCameraStatus();
 	}
 
 // Code to download Web User Manual and Alert Compliance Report 	
-	@Test(enabled = true)
+	@Epic("")
+	@Story("Manual")
+	@Description("Checks the UserManual and Alert Compliance Report")
+	@Severity(SeverityLevel.MINOR)
+	@Test(enabled = false)
 	public void exportData() throws InterruptedException {
 		String home_Page = driver.getWindowHandle();
 		cdp = new ConsolidateDashboardPage(driver);
@@ -88,7 +108,11 @@ public class TestScript extends BaseClass {
 	}
 
 //Code to read and compare all the usecase list from the dashoard cards under "All violation based on Criticality" and from the excel sheet.
-	@Test(enabled = true)
+	@Epic("")
+	@Story("Usecase List")
+	@Description("Checks the usecase list under the All Violation Based on Criticality")
+	@Severity(SeverityLevel.MINOR)
+	@Test(enabled = false)
 	public void usecaseList() throws EncryptedDocumentException, IOException {
 		List<WebElement> elements = driver.findElements(
 				By.xpath("//div[@class='dashboard-tile has-cont-busy-ind ng-star-inserted']/div[1]/div[1]/span[1]"));
@@ -101,9 +125,12 @@ public class TestScript extends BaseClass {
 		}
 	}
 
-	
 	// ************Customer Page********************
-	@Test(enabled = true)
+	@Epic("")
+	@Story("Customer Page")
+	@Description("It checks the customer page by passing the values taken from the Excel sheet")
+	@Severity(SeverityLevel.MINOR)
+	@Test(enabled = false)
 	public void testCustomerPage() throws Exception {
 		Allure.label("tag", "Customer Page");
 		Allure.label("tag", "Customer Details");
@@ -114,7 +141,11 @@ public class TestScript extends BaseClass {
 	}
 
 	// ****************SITE PAGE********************
-	@Test(enabled = true)
+	@Epic("")
+	@Story("Site Page")
+	@Description("The site page checks by passing all the values in the from the excel sheet.")
+	@Severity(SeverityLevel.MINOR)
+	@Test(enabled = false)
 	public void testSitePage() throws Exception {
 		Allure.label("tag", "Site Page");
 		Allure.label("tag", "Site Details");
@@ -129,27 +160,35 @@ public class TestScript extends BaseClass {
 		// String site_check =site.findSiteName(siteName);
 		// AssertJUnit.assertEquals(siteName, site_check);
 	}
-	
-	
+
 	// ****************REPORT PAGE********************
-	@Test 
-	public void reports () throws InterruptedException
-	{
+	@Epic("")
+	@Story("Report Page")
+	@Description("This check wheather the report are downloadable or not")
+	@Severity(SeverityLevel.MINOR)
+	@Test(enabled = true)
+	public void reports() throws InterruptedException {
 		ReportPage report = new ReportPage(driver);
 		report.setReport();
 	}
 
 	// ********************UserSession Page************************
-	@Test(enabled = true)
+	@Epic("")
+	@Story("User Session Page")
+	@Description("Checks for the user session")
+	@Severity(SeverityLevel.MINOR)
+	@Test(enabled = false)
 	public void testUserSessionPage() throws InterruptedException, AWTException {
 		UserSessionsPage us = new UserSessionsPage(driver);
 		us.setUserSession();
 
 	}
-	
-	
 
 	// ********************USERS Page********************
+	@Epic("")
+	@Story("User Page")
+	@Description("This check for the adding of the user")
+	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = false)
 	public void testAddUsersPage() throws InterruptedException, EncryptedDocumentException, IOException {
 
@@ -177,7 +216,10 @@ public class TestScript extends BaseClass {
 //		String verifiedUser = user.getVerifiedUser();
 //		AssertJUnit.assertEquals(email, verifiedUser);		
 	}
-
+	
+	@Story("User Page")
+	@Description("This check for the deletion of the user")
+	@Severity(SeverityLevel.MINOR)
 	@Test(dependsOnMethods = "testAddUsersPage", enabled = false)
 	public void testEditUserDetails() throws InterruptedException, EncryptedDocumentException, IOException {
 		UserPage user = new UserPage(driver);
@@ -199,12 +241,18 @@ public class TestScript extends BaseClass {
 				notification, site, emp_id);
 	}
 
+	@Story("User Page")
+	@Description("This check for the editing of the user")
+	@Severity(SeverityLevel.MINOR)
 	@Test(dependsOnMethods = "testEditUserDetails", enabled = false)
 	public void testUserDetails() throws InterruptedException {
 		UserPage user = new UserPage(driver);
 		user.userDetails();
 	}
 
+	@Story("User Page")
+	@Description("This code for the Checking of the of the user")
+	@Severity(SeverityLevel.MINOR)
 	@Test(dependsOnMethods = "testUserDetails", enabled = false)
 	public void testUserPasswordReset() throws InterruptedException {
 		UserPage user = new UserPage(driver);
@@ -212,7 +260,10 @@ public class TestScript extends BaseClass {
 	}
 
 	// code to delete a user only if AddUsersPage method works. <Make sure change
-	// enabled = false into enabled = true>
+	// enabled = false into enabled = false>
+	@Story("User Page")
+	@Description("This code for the checking of the deleted user")
+	@Severity(SeverityLevel.MINOR)
 	@Test(dependsOnMethods = "testAddUsersPage", enabled = false)
 	public void testDeleteUser() throws EncryptedDocumentException, IOException {
 		UserPage user = new UserPage(driver);
@@ -222,23 +273,34 @@ public class TestScript extends BaseClass {
 		SoftAssert a = new SoftAssert();
 		a.assertNotEquals(email, verify_delete_user);
 	}
-
+	
+	
+	@Epic("")
+	@Story("Assert Managment Page")
+	@Description("This is for checking the assert managment page.")
+	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = false)
-
 	public void testAssertManagmentPage() throws InterruptedException {
 		AssertManagmentPage amp = new AssertManagmentPage(driver);
 		amp.setAssertManagment();
 	}
 
+	
+	@Epic("")
+	@Story("Customer Page")
+	@Description("This is for checking the customer page.")
+	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = false)
-
 	public void testCustomerConfigPage() {
 		CustomerConfigPage config = new CustomerConfigPage(driver);
 		config.customerCongif();
 	}
 
+	@Epic("")
+	@Story("Dataset Managment Page")
+	@Description("This is to check the Dataset managment page.")
+	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = false)
-
 	public void testDatasetManagmentPage() throws InterruptedException {
 		DatasetManagmentPage ds = new DatasetManagmentPage(driver);
 		ds.setDatasetPage();

@@ -3,15 +3,23 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.cng.testscript.Users">
+      <class name="com.cng.testscript.TestScript">
         <methods>
+          <include name="testAssertManagmentPage"/>
+          <include name="testSitePage"/>
+          <include name="testUserSessionPage"/>
+          <include name="testCustomerConfigPage"/>
+          <include name="testCustomerPage"/>
           <include name="openBrowser"/>
-          <include name="testDuplicateData"/>
+          <include name="reports"/>
+          <include name="outletStatus"/>
           <include name="closeBrowser"/>
           <include name="login"/>
           <include name="logout"/>
+          <include name="usecaseList"/>
+          <include name="testDatasetManagmentPage"/>
         </methods>
-      </class> <!-- com.cng.testscript.Users -->
+      </class> <!-- com.cng.testscript.TestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

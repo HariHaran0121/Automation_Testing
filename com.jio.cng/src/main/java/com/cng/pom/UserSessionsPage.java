@@ -51,7 +51,7 @@ public class UserSessionsPage {
 		Thread.sleep(1000);
 		one_Week.click();
 		Thread.sleep(4000);
-		userFilter.sendKeys("Pawan");
+		userFilter.sendKeys("Pavan");
 		robot = new Robot();
 		Thread.sleep(500);
 		robot.keyPress(KeyEvent.VK_DOWN);
