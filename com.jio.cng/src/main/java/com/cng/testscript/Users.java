@@ -11,7 +11,6 @@ import com.cng.generic.FileLib;
 import com.cng.pom.UserPage;
 
 import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;

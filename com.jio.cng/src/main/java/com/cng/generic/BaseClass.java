@@ -14,9 +14,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 import com.cng.pom.HomePage;
@@ -46,7 +46,7 @@ public class BaseClass {
 	}
 
 	//Code to read the file
-	@BeforeMethod
+	@BeforeClass
 	public void login() throws Exception {
 		Reporter.log("login", true);
 		FileLib f = new FileLib();
@@ -74,11 +74,6 @@ public class BaseClass {
 	
 	@AfterMethod
 	public void logout(ITestResult result) throws InterruptedException, IOException {
-		
-		Reporter.log("logout", true);
-		HomePage h = new HomePage(driver);
-		Thread.sleep(5000);
-		h.setLogout();
 //		if(result.getStatus()==ITestResult.FAILURE){
 //			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getName()); //to add name in extent report
 //			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getThrowable()); //to add error/exception in extent report
@@ -96,8 +91,12 @@ public class BaseClass {
 //		extent.endTest(extentTest); //ending test and ends the current test and prepare to create html report
 	}
 
-	@AfterTest
-	public void closeBrowser() {
+	@AfterClass
+	public void closeBrowser() throws InterruptedException, IOException{
+		Reporter.log("logout", true);
+		HomePage h = new HomePage(driver);
+		Thread.sleep(5000);
+		h.setLogout();
 		Reporter.log("closeBrowser", true);
 		driver.quit();
 	}
