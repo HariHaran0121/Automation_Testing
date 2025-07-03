@@ -21,7 +21,7 @@ public class ExtentReporterNG implements IReporter {
 	private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-		extent = new ExtentReports(outputDirectory + File.separator + "CNG_ExtentReport.html", true);
+		extent = new ExtentReports(outputDirectory + File.separator + "Extentreporter/CNG_ExtentReport.html", true);
 		// Adding system information
 		extent.addSystemInfo("OS", System.getProperty("os.name"));
 		extent.addSystemInfo("Java Version", System.getProperty("java.version"));

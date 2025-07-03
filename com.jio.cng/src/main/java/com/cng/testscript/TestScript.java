@@ -47,7 +47,7 @@ public class TestScript extends BaseClass {
 	@Description("It checks for the broken images in the consolidate dashboard")
 	@Severity(SeverityLevel.MINOR)
 	@SuppressWarnings("deprecation")
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 1)
 	public void dummy() throws Exception {
 		Thread.sleep(2000);
 		List<WebElement> images = driver.findElements(By.tagName("img"));
@@ -78,7 +78,7 @@ public class TestScript extends BaseClass {
 	@Story("Outlet Status")
 	@Description("Checks the outlet status in the Consolidate Dashboard.")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 2)
 	public void outletStatus() throws InterruptedException {
 		cdp = new ConsolidateDashboardPage(driver);
 		cdp.setoutletList();
@@ -89,7 +89,7 @@ public class TestScript extends BaseClass {
 	@Story("Camera Status")
 	@Description("Checks the Camera Status status in the Consolidate Dashboard.")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 3)
 	public void cameraStatus() throws InterruptedException {
 		cdp = new ConsolidateDashboardPage(driver);
 		cdp.setCameraStatus();
@@ -100,7 +100,7 @@ public class TestScript extends BaseClass {
 	@Story("Manual")
 	@Description("Checks the UserManual and Alert Compliance Report")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 4)
 	public void exportData() throws InterruptedException {
 		String home_Page = driver.getWindowHandle();
 		cdp = new ConsolidateDashboardPage(driver);
@@ -112,7 +112,7 @@ public class TestScript extends BaseClass {
 	@Story("Usecase List")
 	@Description("Checks the usecase list under the All Violation Based on Criticality")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 5)
 	public void usecaseList() throws EncryptedDocumentException, IOException {
 		List<WebElement> elements = driver.findElements(
 				By.xpath("//div[@class='dashboard-tile has-cont-busy-ind ng-star-inserted']/div[1]/div[1]/span[1]"));
@@ -130,11 +130,11 @@ public class TestScript extends BaseClass {
 	@Story("Customer Page")
 	@Description("It checks the customer page by passing the values taken from the Excel sheet")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 6)
 	public void testCustomerPage() throws Exception {
 		Allure.label("tag", "Customer Page");
 		Allure.label("tag", "Customer Details");
-		Allure.label("tag", "Customer Information");
+		Allure.label("tag", "Customer Infor, priority = 1mation");
 		CustomerPage cus = new CustomerPage(driver);
 		cus.setCustomer();
 		cus.setAddCustomer();
@@ -145,7 +145,7 @@ public class TestScript extends BaseClass {
 	@Story("Site Page")
 	@Description("The site page checks by passing all the values in the from the excel sheet.")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 7)
 	public void testSitePage() throws Exception {
 		Allure.label("tag", "Site Page");
 		Allure.label("tag", "Site Details");
@@ -166,7 +166,7 @@ public class TestScript extends BaseClass {
 	@Story("Report Page")
 	@Description("This check wheather the report are downloadable or not")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 8)
 	public void reports() throws InterruptedException {
 		ReportPage report = new ReportPage(driver);
 		report.setReport();
@@ -177,7 +177,7 @@ public class TestScript extends BaseClass {
 	@Story("User Session Page")
 	@Description("Checks for the user session")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 9)
 	public void testUserSessionPage() throws InterruptedException, AWTException {
 		UserSessionsPage us = new UserSessionsPage(driver);
 		us.setUserSession();
@@ -189,7 +189,7 @@ public class TestScript extends BaseClass {
 	@Story("User Page")
 	@Description("This check for the adding of the user")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 10)
 	public void testAddUsersPage() throws InterruptedException, EncryptedDocumentException, IOException {
 
 		UserPage user = new UserPage(driver);
@@ -218,9 +218,9 @@ public class TestScript extends BaseClass {
 	}
 	
 	@Story("User Page")
-	@Description("This check for the deletion of the user")
+	@Description("This check for to edit of the user")
 	@Severity(SeverityLevel.MINOR)
-	@Test(dependsOnMethods = "testAddUsersPage", enabled = true)
+	@Test(dependsOnMethods = "testAddUsersPage", enabled = false)
 	public void testEditUserDetails() throws InterruptedException, EncryptedDocumentException, IOException {
 		UserPage user = new UserPage(driver);
 		FileLib excel = new FileLib();
@@ -244,7 +244,7 @@ public class TestScript extends BaseClass {
 	@Story("User Page")
 	@Description("This check for the editing of the user")
 	@Severity(SeverityLevel.MINOR)
-	@Test(dependsOnMethods = "testEditUserDetails", enabled = true)
+	@Test(dependsOnMethods = "testEditUserDetails", enabled = false)
 	public void testUserDetails() throws InterruptedException {
 		UserPage user = new UserPage(driver);
 		user.userDetails();
@@ -253,7 +253,7 @@ public class TestScript extends BaseClass {
 	@Story("User Page")
 	@Description("This code for the Checking of the of the user")
 	@Severity(SeverityLevel.MINOR)
-	@Test(dependsOnMethods = "testUserDetails", enabled = true)
+	@Test(dependsOnMethods = "testUserDetails", enabled = false)
 	public void testUserPasswordReset() throws InterruptedException {
 		UserPage user = new UserPage(driver);
 		user.editPassword();
@@ -264,7 +264,7 @@ public class TestScript extends BaseClass {
 	@Story("User Page")
 	@Description("This code for the checking of the deleted user")
 	@Severity(SeverityLevel.MINOR)
-	@Test(dependsOnMethods = "testAddUsersPage", enabled = true)
+	@Test(dependsOnMethods = "testAddUsersPage", enabled = false)
 	public void testDeleteUser() throws EncryptedDocumentException, IOException {
 		UserPage user = new UserPage(driver);
 		String verify_delete_user = user.deleteUser();
@@ -279,7 +279,7 @@ public class TestScript extends BaseClass {
 	@Story("Assert Managment Page")
 	@Description("This is for checking the assert managment page.")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = false, priority = 11)
 	public void testAssertManagmentPage() throws InterruptedException {
 		AssertManagmentPage amp = new AssertManagmentPage(driver);
 		amp.setAssertManagment();
@@ -290,7 +290,7 @@ public class TestScript extends BaseClass {
 	@Story("Customer Page")
 	@Description("This is for checking the customer page.")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 12)
 	public void testCustomerConfigPage() {
 		CustomerConfigPage config = new CustomerConfigPage(driver);
 		config.customerCongif();
@@ -300,7 +300,7 @@ public class TestScript extends BaseClass {
 	@Story("Dataset Managment Page")
 	@Description("This is to check the Dataset managment page.")
 	@Severity(SeverityLevel.MINOR)
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 13)
 	public void testDatasetManagmentPage() throws InterruptedException {
 		DatasetManagmentPage ds = new DatasetManagmentPage(driver);
 		ds.setDatasetPage();

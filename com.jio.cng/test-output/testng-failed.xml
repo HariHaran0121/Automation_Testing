@@ -5,17 +5,16 @@
     <classes>
       <class name="com.cng.testscript.TestScript">
         <methods>
-          <include name="testAssertManagmentPage"/>
           <include name="testSitePage"/>
           <include name="testUserSessionPage"/>
+          <include name="testAddUsersPage"/>
           <include name="testCustomerConfigPage"/>
           <include name="testCustomerPage"/>
           <include name="openBrowser"/>
           <include name="reports"/>
-          <include name="outletStatus"/>
-          <include name="closeBrowser"/>
           <include name="login"/>
           <include name="logout"/>
+          <include name="closeBrowser"/>
           <include name="usecaseList"/>
           <include name="testDatasetManagmentPage"/>
         </methods>

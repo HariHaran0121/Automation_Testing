@@ -39,9 +39,9 @@ public class BaseClass {
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		driver.manage().window().maximize();
-		extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html", true);
-		extent.addSystemInfo("Host Name", "Naveen Mac");
-		extent.addSystemInfo("User Name", "Naveen Automation Labs");
+		extent = new ExtentReports(System.getProperty("user.dir")+"Extentreporter/ExtentReport.html", true);
+		extent.addSystemInfo("Host Name", "Jenkins");
+		extent.addSystemInfo("User Name", "Hari Haran");
 		extent.addSystemInfo("Environment", "QA");
 	}
 
@@ -77,10 +77,10 @@ public class BaseClass {
 //		if(result.getStatus()==ITestResult.FAILURE){
 //			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getName()); //to add name in extent report
 //			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getThrowable()); //to add error/exception in extent report
-			
-			//String screenshotPath = ScreenshotCode.getScreenshot(driver, result.getName());
-			//extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath)); //to add screenshot in extent report
-			//extentTest.log(LogStatus.FAIL, extentTest.addScreencast(screenshotPath)); //to add screencast/video in extent report
+//			
+//		String screenshotPath = ScreenshotCode.getScreenshot(driver, result.getName());
+//			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath)); //to add screenshot in extent report
+//			extentTest.log(LogStatus.FAIL, extentTest.addScreencast(screenshotPath)); //to add screencast/video in extent report
 //		}
 //		else if(result.getStatus()==ITestResult.SKIP){
 //			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
@@ -92,7 +92,7 @@ public class BaseClass {
 	}
 
 	@AfterClass
-	public void closeBrowser() throws InterruptedException, IOException{
+	public void closeBrowser(ITestResult result) throws InterruptedException, IOException{		
 		Reporter.log("logout", true);
 		HomePage h = new HomePage(driver);
 		Thread.sleep(5000);

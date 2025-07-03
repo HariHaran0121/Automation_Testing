@@ -96,10 +96,10 @@ public class CustomerPage {
 		Thread.sleep(4000);
 		searchbar.sendKeys("Sparkcognition");
 		robot = new Robot();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		robot.keyPress(KeyEvent.VK_DOWN);
 		robot.keyRelease(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);

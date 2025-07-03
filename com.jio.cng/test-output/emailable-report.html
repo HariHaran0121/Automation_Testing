@@ -8,11 +8,191 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,137</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">8</td><td class="num">102,824</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.cng.testscript.TestScript</td><td><a href="#m0">reports</a></td><td rowspan="1">1751452672035</td><td rowspan="1">14950</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.cng.testscript.TestScript</td><td><a href="#m0">closeBrowser</a></td><td rowspan="1">1751529144334</td><td rowspan="1">-1751529144334</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="8">com.cng.testscript.TestScript</td><td><a href="#m1">reports</a></td><td rowspan="1">1751529131288</td><td rowspan="1">1051</td></tr><tr class="failedeven"><td><a href="#m2">testAddUsersPage</a></td><td rowspan="1">1751529133661</td><td rowspan="1">8169</td></tr><tr class="failedeven"><td><a href="#m3">testCustomerConfigPage</a></td><td rowspan="1">1751529141966</td><td rowspan="1">1053</td></tr><tr class="failedeven"><td><a href="#m4">testCustomerPage</a></td><td rowspan="1">1751529094800</td><td rowspan="1">35034</td></tr><tr class="failedeven"><td><a href="#m5">testDatasetManagmentPage</a></td><td rowspan="1">1751529143150</td><td rowspan="1">1048</td></tr><tr class="failedeven"><td><a href="#m6">testSitePage</a></td><td rowspan="1">1751529130059</td><td rowspan="1">1092</td></tr><tr class="failedeven"><td><a href="#m7">testUserSessionPage</a></td><td rowspan="1">1751529132470</td><td rowspan="1">1053</td></tr><tr class="failedeven"><td><a href="#m8">usecaseList</a></td><td rowspan="1">1751529093476</td><td rowspan="1">1048</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.cng.testscript.TestScript</td><td><a href="#m9">cameraStatus</a></td><td rowspan="1">1751529072924</td><td rowspan="1">19121</td></tr><tr class="passedeven"><td><a href="#m10">dummy</a></td><td rowspan="1">1751529049104</td><td rowspan="1">4521</td></tr><tr class="passedeven"><td><a href="#m11">exportData</a></td><td rowspan="1">1751529092048</td><td rowspan="1">1426</td></tr><tr class="passedeven"><td><a href="#m12">outletStatus</a></td><td rowspan="1">1751529053636</td><td rowspan="1">19286</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.cng.testscript.TestScript#reports</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.cng.testscript.TestScript#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @AfterClass annotated closeBrowser.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.cng.testscript.TestScript#reports</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;clr-icon _ngcontent-hfy-c4=&quot;&quot; class=&quot;nav-icon&quot; clrverticalnavicon=&quot;&quot; role=&quot;none&quot; shape=&quot;clipboard&quot; title=&quot;Reports&quot;&gt;...&lt;/clr-icon&gt; is not clickable at point (23, 194). Other element would receive the click: &lt;div _ngcontent-hfy-c1=&quot;&quot; class=&quot;modal-backdrop ng-trigger ng-trigger-fade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=137.0.7151.119)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.258}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -&gt; xpath: //clr-icon[@title=&apos;Reports&apos;]]
+Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.cng.pom.ReportPage.setReport(ReportPage.java:66)
+	at com.cng.testscript.TestScript.reports(TestScript.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.cng.testscript.TestScript#testAddUsersPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;clr-icon _ngcontent-hfy-c4=&quot;&quot; class=&quot;nav-icon&quot; clrverticalnavicon=&quot;&quot; role=&quot;none&quot; shape=&quot;users&quot; title=&quot;Users&quot;&gt;...&lt;/clr-icon&gt; is not clickable at point (23, 290). Other element would receive the click: &lt;div _ngcontent-hfy-c1=&quot;&quot; class=&quot;modal-backdrop ng-trigger ng-trigger-fade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=137.0.7151.119)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -&gt; xpath: //clr-icon[@title=&apos;Users&apos;]]
+Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.cng.pom.UserPage.setAddUsers(UserPage.java:130)
+	at com.cng.testscript.TestScript.testAddUsersPage(TestScript.java:213)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.cng.testscript.TestScript#testCustomerConfigPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;clr-icon _ngcontent-hfy-c4=&quot;&quot; class=&quot;nav-icon&quot; clrverticalnavicon=&quot;&quot; role=&quot;none&quot; shape=&quot;administrator&quot; title=&quot;Customer Config&quot;&gt;...&lt;/clr-icon&gt; is not clickable at point (23, 578). Other element would receive the click: &lt;div _ngcontent-hfy-c1=&quot;&quot; class=&quot;modal-backdrop ng-trigger ng-trigger-fade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=137.0.7151.119)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.261}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -&gt; xpath: //clr-icon[@title=&apos;Customer Config&apos;]]
+Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.cng.pom.CustomerConfigPage.customerCongif(CustomerConfigPage.java:23)
+	at com.cng.testscript.TestScript.testCustomerConfigPage(TestScript.java:296)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.cng.testscript.TestScript#testCustomerPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=137.0.7151.119)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c9258aced386a0932bc3ffd31f6aabf, sendKeysToElement {value=[Ljava.lang.CharSequence;@5cba474f, id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.187}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -&gt; id: companyemail]
+Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
+	at com.cng.pom.CustomerPage.setAddCustomer(CustomerPage.java:131)
+	at com.cng.testscript.TestScript.testCustomerPage(TestScript.java:140)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.cng.testscript.TestScript#testDatasetManagmentPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;clr-icon _ngcontent-hfy-c4=&quot;&quot; class=&quot;nav-icon&quot; clrverticalnavicon=&quot;&quot; role=&quot;none&quot; shape=&quot;view-list&quot; title=&quot;Dataset Management&quot;&gt;...&lt;/clr-icon&gt; is not clickable at point (23, 530). Other element would receive the click: &lt;div _ngcontent-hfy-c1=&quot;&quot; class=&quot;modal-backdrop ng-trigger ng-trigger-fade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=137.0.7151.119)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.262}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -&gt; xpath: //clr-icon[@title=&apos;Dataset Management&apos;]]
+Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.cng.pom.DatasetManagmentPage.setDatasetPage(DatasetManagmentPage.java:41)
+	at com.cng.testscript.TestScript.testDatasetManagmentPage(TestScript.java:306)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.cng.testscript.TestScript#testSitePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;clr-icon _ngcontent-hfy-c4=&quot;&quot; class=&quot;nav-icon&quot; clrverticalnavicon=&quot;&quot; role=&quot;none&quot; shape=&quot;map-marker&quot; title=&quot;Sites&quot;&gt;...&lt;/clr-icon&gt; is not clickable at point (23, 434). Other element would receive the click: &lt;div _ngcontent-hfy-c1=&quot;&quot; class=&quot;modal-backdrop ng-trigger ng-trigger-fade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=137.0.7151.119)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.257}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -&gt; xpath: //clr-icon[@title=&apos;Sites&apos;]]
+Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.cng.pom.SitePage.setSitePages(SitePage.java:48)
+	at com.cng.testscript.TestScript.testSitePage(TestScript.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.cng.testscript.TestScript#testUserSessionPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;clr-icon _ngcontent-hfy-c4=&quot;&quot; class=&quot;nav-icon&quot; clrverticalnavicon=&quot;&quot; role=&quot;none&quot; shape=&quot;history&quot; title=&quot;User Sessions&quot;&gt;...&lt;/clr-icon&gt; is not clickable at point (23, 626). Other element would receive the click: &lt;div _ngcontent-hfy-c1=&quot;&quot; class=&quot;modal-backdrop ng-trigger ng-trigger-fade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=137.0.7151.119)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-60-generic&apos;, java.version: &apos;11.0.27&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.259}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -&gt; xpath: //clr-icon[@title=&apos;User Sessions&apos;]]
+Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.cng.pom.UserSessionsPage.setUserSession(UserSessionsPage.java:45)
+	at com.cng.testscript.TestScript.testUserSessionPage(TestScript.java:183)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.cng.testscript.TestScript#usecaseList</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [OVERSTAYING OF FOUR WHEELERS] but found [OVERSTAYING OF VEHICLE]
+	at com.cng.testscript.TestScript.usecaseList(TestScript.java:124)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.cng.testscript.TestScript#cameraStatus</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.cng.testscript.TestScript#dummy</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.cng.testscript.TestScript#exportData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.cng.testscript.TestScript#outletStatus</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
