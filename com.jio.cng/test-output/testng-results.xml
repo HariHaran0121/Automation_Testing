@@ -8,86 +8,86 @@
       <![CDATA[login]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-03T12:50:41 PKT" name="Suite" finished-at="2025-07-03T12:52:24 PKT" duration-ms="102824">
+  <suite started-at="2025-07-03T13:07:12 PKT" name="Default suite" finished-at="2025-07-03T13:08:54 PKT" duration-ms="102660">
     <groups>
     </groups>
-    <test started-at="2025-07-03T12:50:41 PKT" name="Test" finished-at="2025-07-03T12:52:24 PKT" duration-ms="102824">
+    <test started-at="2025-07-03T13:07:12 PKT" name="Default test" finished-at="2025-07-03T13:08:54 PKT" duration-ms="102660">
       <class name="com.cng.testscript.TestScript">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:50:41 PKT" name="openBrowser" finished-at="2025-07-03T12:50:44 PKT" duration-ms="2377" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:07:12 PKT" name="openBrowser" finished-at="2025-07-03T13:07:14 PKT" duration-ms="2428" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[openBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:50:44 PKT" name="login" finished-at="2025-07-03T12:50:49 PKT" duration-ms="4950" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:07:14 PKT" name="login" finished-at="2025-07-03T13:07:19 PKT" duration-ms="4938" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[login]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="dummy()[pri:1, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:50:49 PKT" name="dummy" finished-at="2025-07-03T12:50:53 PKT" duration-ms="4521" status="PASS">
+        <test-method signature="dummy()[pri:1, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:07:19 PKT" name="dummy" finished-at="2025-07-03T13:07:23 PKT" duration-ms="4124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummy -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:50:53 PKT" name="logout" finished-at="2025-07-03T12:50:53 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:07:23 PKT" name="logout" finished-at="2025-07-03T13:07:23 PKT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dummy status=SUCCESS method=TestScript.dummy()[pri:1, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=dummy status=SUCCESS method=TestScript.dummy()[pri:1, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="outletStatus()[pri:2, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:50:53 PKT" name="outletStatus" finished-at="2025-07-03T12:51:12 PKT" duration-ms="19286" status="PASS">
+        <test-method signature="outletStatus()[pri:2, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:07:23 PKT" name="outletStatus" finished-at="2025-07-03T13:07:43 PKT" duration-ms="19271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- outletStatus -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:51:12 PKT" name="logout" finished-at="2025-07-03T12:51:12 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:07:43 PKT" name="logout" finished-at="2025-07-03T13:07:43 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=outletStatus status=SUCCESS method=TestScript.outletStatus()[pri:2, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=outletStatus status=SUCCESS method=TestScript.outletStatus()[pri:2, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="cameraStatus()[pri:3, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:51:12 PKT" name="cameraStatus" finished-at="2025-07-03T12:51:32 PKT" duration-ms="19121" status="PASS">
+        <test-method signature="cameraStatus()[pri:3, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:07:43 PKT" name="cameraStatus" finished-at="2025-07-03T13:08:02 PKT" duration-ms="19179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cameraStatus -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:51:32 PKT" name="logout" finished-at="2025-07-03T12:51:32 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:02 PKT" name="logout" finished-at="2025-07-03T13:08:02 PKT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=cameraStatus status=SUCCESS method=TestScript.cameraStatus()[pri:3, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=cameraStatus status=SUCCESS method=TestScript.cameraStatus()[pri:3, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="exportData()[pri:4, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:51:32 PKT" name="exportData" finished-at="2025-07-03T12:51:33 PKT" duration-ms="1426" status="PASS">
+        <test-method signature="exportData()[pri:4, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:02 PKT" name="exportData" finished-at="2025-07-03T13:08:03 PKT" duration-ms="1390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportData -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:51:33 PKT" name="logout" finished-at="2025-07-03T12:51:33 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:03 PKT" name="logout" finished-at="2025-07-03T13:08:03 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=exportData status=SUCCESS method=TestScript.exportData()[pri:4, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=exportData status=SUCCESS method=TestScript.exportData()[pri:4, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="usecaseList()[pri:5, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:51:33 PKT" name="usecaseList" finished-at="2025-07-03T12:51:34 PKT" duration-ms="1048" status="FAIL">
+        <test-method signature="usecaseList()[pri:5, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:03 PKT" name="usecaseList" finished-at="2025-07-03T13:08:05 PKT" duration-ms="1239" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [OVERSTAYING OF FOUR WHEELERS] but found [OVERSTAYING OF VEHICLE]]]>
@@ -135,18 +135,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usecaseList -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:51:34 PKT" name="logout" finished-at="2025-07-03T12:51:34 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:05 PKT" name="logout" finished-at="2025-07-03T13:08:05 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=usecaseList status=FAILURE method=TestScript.usecaseList()[pri:5, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=usecaseList status=FAILURE method=TestScript.usecaseList()[pri:5, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="testCustomerPage()[pri:6, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:51:34 PKT" name="testCustomerPage" finished-at="2025-07-03T12:52:09 PKT" duration-ms="35034" status="FAIL">
+        <test-method signature="testCustomerPage()[pri:6, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:05 PKT" name="testCustomerPage" finished-at="2025-07-03T13:08:40 PKT" duration-ms="35020" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -154,10 +154,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, sendKeysToElement {value=[Ljava.lang.CharSequence;@5cba474f, id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.187}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> id: companyemail]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf]]>
+Command: [92eb141fdd04b1f71f844caf62d688ae, sendKeysToElement {value=[Ljava.lang.CharSequence;@34e9de8d, id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.180}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> id: companyemail]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -165,10 +165,10 @@ Session ID: 6c9258aced386a0932bc3ffd31f6aabf]]>
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, sendKeysToElement {value=[Ljava.lang.CharSequence;@5cba474f, id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.187}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> id: companyemail]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+Command: [92eb141fdd04b1f71f844caf62d688ae, sendKeysToElement {value=[Ljava.lang.CharSequence;@34e9de8d, id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.180}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> id: companyemail]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -224,40 +224,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerPage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:10 PKT" name="logout" finished-at="2025-07-03T12:52:10 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:40 PKT" name="logout" finished-at="2025-07-03T13:08:40 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCustomerPage status=FAILURE method=TestScript.testCustomerPage()[pri:6, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=testCustomerPage status=FAILURE method=TestScript.testCustomerPage()[pri:6, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="testSitePage()[pri:7, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:10 PKT" name="testSitePage" finished-at="2025-07-03T12:52:11 PKT" duration-ms="1092" status="FAIL">
+        <test-method signature="testSitePage()[pri:7, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:40 PKT" name="testSitePage" finished-at="2025-07-03T13:08:41 PKT" duration-ms="1133" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="map-marker" title="Sites">...</clr-icon> is not clickable at point (23, 434). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="map-marker" title="Sites">...</clr-icon> is not clickable at point (23, 434). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.257}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Sites']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf]]>
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.250}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Sites']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="map-marker" title="Sites">...</clr-icon> is not clickable at point (23, 434). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="map-marker" title="Sites">...</clr-icon> is not clickable at point (23, 434). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.257}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Sites']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.250}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Sites']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -312,40 +312,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSitePage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:11 PKT" name="logout" finished-at="2025-07-03T12:52:11 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:41 PKT" name="logout" finished-at="2025-07-03T13:08:41 PKT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSitePage status=FAILURE method=TestScript.testSitePage()[pri:7, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=testSitePage status=FAILURE method=TestScript.testSitePage()[pri:7, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="reports()[pri:8, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:11 PKT" name="reports" finished-at="2025-07-03T12:52:12 PKT" duration-ms="1051" status="FAIL">
+        <test-method signature="reports()[pri:8, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:41 PKT" name="reports" finished-at="2025-07-03T13:08:42 PKT" duration-ms="1058" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="clipboard" title="Reports">...</clr-icon> is not clickable at point (23, 194). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="clipboard" title="Reports">...</clr-icon> is not clickable at point (23, 194). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.258}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Reports']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf]]>
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.251}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Reports']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="clipboard" title="Reports">...</clr-icon> is not clickable at point (23, 194). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="clipboard" title="Reports">...</clr-icon> is not clickable at point (23, 194). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.258}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Reports']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.251}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Reports']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -400,40 +400,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reports -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:12 PKT" name="logout" finished-at="2025-07-03T12:52:12 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:42 PKT" name="logout" finished-at="2025-07-03T13:08:42 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=reports status=FAILURE method=TestScript.reports()[pri:8, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=reports status=FAILURE method=TestScript.reports()[pri:8, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="testUserSessionPage()[pri:9, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:12 PKT" name="testUserSessionPage" finished-at="2025-07-03T12:52:13 PKT" duration-ms="1053" status="FAIL">
+        <test-method signature="testUserSessionPage()[pri:9, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:42 PKT" name="testUserSessionPage" finished-at="2025-07-03T13:08:43 PKT" duration-ms="1052" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="history" title="User Sessions">...</clr-icon> is not clickable at point (23, 626). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="history" title="User Sessions">...</clr-icon> is not clickable at point (23, 626). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.259}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='User Sessions']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf]]>
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.252}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='User Sessions']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="history" title="User Sessions">...</clr-icon> is not clickable at point (23, 626). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="history" title="User Sessions">...</clr-icon> is not clickable at point (23, 626). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.259}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='User Sessions']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.252}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='User Sessions']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -488,29 +488,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUserSessionPage -->
-        <test-method signature="testAddUsersPage()[pri:10, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:13 PKT" name="testAddUsersPage" finished-at="2025-07-03T12:52:21 PKT" duration-ms="8169" status="FAIL">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:44 PKT" name="logout" finished-at="2025-07-03T13:08:44 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUserSessionPage status=FAILURE method=TestScript.testUserSessionPage()[pri:9, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="testAddUsersPage()[pri:10, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:44 PKT" name="testAddUsersPage" finished-at="2025-07-03T13:08:52 PKT" duration-ms="8195" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="users" title="Users">...</clr-icon> is not clickable at point (23, 290). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="users" title="Users">...</clr-icon> is not clickable at point (23, 290). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.260}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Users']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf]]>
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.253}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Users']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="users" title="Users">...</clr-icon> is not clickable at point (23, 290). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="users" title="Users">...</clr-icon> is not clickable at point (23, 290). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.260}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Users']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.253}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Users']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -565,51 +576,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddUsersPage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:13 PKT" name="logout" finished-at="2025-07-03T12:52:13 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:52 PKT" name="logout" finished-at="2025-07-03T13:08:52 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testUserSessionPage status=FAILURE method=TestScript.testUserSessionPage()[pri:9, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=testAddUsersPage status=FAILURE method=TestScript.testAddUsersPage()[pri:10, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:21 PKT" name="logout" finished-at="2025-07-03T12:52:21 PKT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testAddUsersPage status=FAILURE method=TestScript.testAddUsersPage()[pri:10, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="testCustomerConfigPage()[pri:12, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:21 PKT" name="testCustomerConfigPage" finished-at="2025-07-03T12:52:23 PKT" duration-ms="1053" status="FAIL">
+        <test-method signature="testCustomerConfigPage()[pri:12, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:52 PKT" name="testCustomerConfigPage" finished-at="2025-07-03T13:08:53 PKT" duration-ms="1051" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="administrator" title="Customer Config">...</clr-icon> is not clickable at point (23, 578). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="administrator" title="Customer Config">...</clr-icon> is not clickable at point (23, 578). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.261}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Customer Config']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf]]>
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.254}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Customer Config']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="administrator" title="Customer Config">...</clr-icon> is not clickable at point (23, 578). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="administrator" title="Customer Config">...</clr-icon> is not clickable at point (23, 578). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.261}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Customer Config']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.254}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Customer Config']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -664,40 +664,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerConfigPage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:23 PKT" name="logout" finished-at="2025-07-03T12:52:23 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:53 PKT" name="logout" finished-at="2025-07-03T13:08:53 PKT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCustomerConfigPage status=FAILURE method=TestScript.testCustomerConfigPage()[pri:12, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=testCustomerConfigPage status=FAILURE method=TestScript.testCustomerConfigPage()[pri:12, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="testDatasetManagmentPage()[pri:13, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:23 PKT" name="testDatasetManagmentPage" finished-at="2025-07-03T12:52:24 PKT" duration-ms="1048" status="FAIL">
+        <test-method signature="testDatasetManagmentPage()[pri:13, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:53 PKT" name="testDatasetManagmentPage" finished-at="2025-07-03T13:08:54 PKT" duration-ms="1052" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="view-list" title="Dataset Management">...</clr-icon> is not clickable at point (23, 530). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="view-list" title="Dataset Management">...</clr-icon> is not clickable at point (23, 530). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.262}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Dataset Management']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf]]>
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.255}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Dataset Management']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-hfy-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="view-list" title="Dataset Management">...</clr-icon> is not clickable at point (23, 530). Other element would receive the click: <div _ngcontent-hfy-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <clr-icon _ngcontent-gds-c4="" class="nav-icon" clrverticalnavicon="" role="none" shape="view-list" title="Dataset Management">...</clr-icon> is not clickable at point (23, 530). Other element would receive the click: <div _ngcontent-gds-c1="" class="modal-backdrop ng-trigger ng-trigger-fade" aria-hidden="true"></div>
   (Session info: chrome=137.0.7151.119)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c9258aced386a0932bc3ffd31f6aabf, clickElement {id=f.348A34791D9D4A2170B96B9A99112835.d.8C56923A5DD182295E6628A2597D1152.e.262}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:32833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:32833/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6c9258aced386a0932bc3ffd31f6aabf)] -> xpath: //clr-icon[@title='Dataset Management']]
-Session ID: 6c9258aced386a0932bc3ffd31f6aabf
+Command: [92eb141fdd04b1f71f844caf62d688ae, clickElement {id=f.19AAB28312339E8F5391BBAFD9104C85.d.2D9587128723DA45A0FEF66712DC2BFE.e.255}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44597/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (92eb141fdd04b1f71f844caf62d688ae)] -> xpath: //clr-icon[@title='Dataset Management']]
+Session ID: 92eb141fdd04b1f71f844caf62d688ae
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -752,18 +752,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDatasetManagmentPage -->
-        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:24 PKT" name="logout" finished-at="2025-07-03T12:52:24 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:54 PKT" name="logout" finished-at="2025-07-03T13:08:54 PKT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testDatasetManagmentPage status=FAILURE method=TestScript.testDatasetManagmentPage()[pri:13, instance:com.cng.testscript.TestScript@610df783] output={null}]]]>
+                <![CDATA[[TestResult name=testDatasetManagmentPage status=FAILURE method=TestScript.testDatasetManagmentPage()[pri:13, instance:com.cng.testscript.TestScript@14379273] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@610df783]" started-at="2025-07-03T12:52:24 PKT" name="closeBrowser" finished-at="1970-01-01T05:00:00 PKT" duration-ms="-1751529144334" status="FAIL">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.cng.testscript.TestScript@14379273]" started-at="2025-07-03T13:08:54 PKT" name="closeBrowser" finished-at="1970-01-01T05:00:00 PKT" duration-ms="-1751530134831" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -805,6 +805,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.cng.testscript.TestScript -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
