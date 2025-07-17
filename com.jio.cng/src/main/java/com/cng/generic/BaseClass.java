@@ -2,6 +2,8 @@ package com.cng.generic;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -30,7 +32,7 @@ public class BaseClass {
 	public ExtentReports extent;
 	public ExtentTest extentTest;
 
-	//Code to open the browser and adds the URL
+	// Code to open the browser and adds the URL
 	@BeforeTest
 	public void openBrowser() {
 		ChromeOptions options = new ChromeOptions();
@@ -39,13 +41,28 @@ public class BaseClass {
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		driver.manage().window().maximize();
-		extent = new ExtentReports(System.getProperty("user.dir")+"Extentreporter/ExtentReport.html", true);
+		extent = new ExtentReports(System.getProperty("user.dir") + "Extentreporter/ExtentReport.html", true);
 		extent.addSystemInfo("Host Name", "Jenkins");
 		extent.addSystemInfo("User Name", "Hari Haran");
 		extent.addSystemInfo("Environment", "QA");
+		deleteDirectory("allure-results");
+		deleteDirectory("allure-report");
 	}
 
-	//Code to read the file
+	private void deleteDirectory(String folderName) {
+		try {
+			Path path = Path.of(folderName);
+			if (Files.exists(path)) {
+				Files.walk(path).map(Path::toFile).sorted((o1, o2) -> -o1.compareTo(o2)) // delete children first
+						.forEach(File::delete);
+				System.out.println("Deleted old " + folderName + " folder.");
+			}
+		} catch (Exception e) {
+			System.err.println("Failed to delete " + folderName + ": " + e.getMessage());
+		}
+	}
+
+	// Code to read the file
 	@BeforeClass
 	public void login() throws Exception {
 		Reporter.log("login", true);
@@ -59,7 +76,7 @@ public class BaseClass {
 		l.setLogin(un, pw, customer);
 	}
 
-	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException{
+	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
@@ -71,7 +88,7 @@ public class BaseClass {
 		FileUtils.copyFile(source, finalDestination);
 		return destination;
 	}
-	
+
 	@AfterMethod
 	public void logout(ITestResult result) throws InterruptedException, IOException {
 //		if(result.getStatus()==ITestResult.FAILURE){
@@ -92,12 +109,10 @@ public class BaseClass {
 	}
 
 	@AfterClass
-	public void closeBrowser(ITestResult result) throws InterruptedException, IOException{		
-		Reporter.log("logout", true);
+	public void closeBrowser(ITestResult result) throws InterruptedException, IOException {
 		HomePage h = new HomePage(driver);
 		Thread.sleep(5000);
 		h.setLogout();
-		Reporter.log("closeBrowser", true);
 		driver.quit();
 	}
 
@@ -107,4 +122,5 @@ public class BaseClass {
 //		extent.flush();
 //		extent.close();
 //	}
+
 }

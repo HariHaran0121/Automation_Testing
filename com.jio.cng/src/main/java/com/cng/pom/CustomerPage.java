@@ -115,11 +115,11 @@ public class CustomerPage {
 	
 	public void setAddCustomer() throws InterruptedException, AWTException 
 	{
-		Thread.sleep(2000);
+	Thread.sleep(2000);
 	addCusbtn.click();
 	Thread.sleep(2000);
 	customerName.sendKeys("spark12345");
-	Thread.sleep(5000);
+	Thread.sleep(8000);
 	otherCus.click();
 	Thread.sleep(2000);
 	chooseOther.click();

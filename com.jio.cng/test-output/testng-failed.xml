@@ -6,17 +6,12 @@
       <class name="com.cng.testscript.TestScript">
         <methods>
           <include name="testSitePage"/>
-          <include name="testAddUsersPage"/>
-          <include name="testUserSessionPage"/>
-          <include name="testCustomerConfigPage"/>
           <include name="testCustomerPage"/>
           <include name="openBrowser"/>
-          <include name="reports"/>
-          <include name="closeBrowser"/>
           <include name="login"/>
+          <include name="closeBrowser"/>
           <include name="logout"/>
-          <include name="usecaseList"/>
-          <include name="testDatasetManagmentPage"/>
+          <include name="testReportsPage"/>
         </methods>
       </class> <!-- com.cng.testscript.TestScript -->
     </classes>
