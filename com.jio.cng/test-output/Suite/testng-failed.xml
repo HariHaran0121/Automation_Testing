@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
       <class name="com.cng.testscript.TestScript">
         <methods>
-          <include name="testSitePage"/>
-          <include name="testUserSessionPage"/>
           <include name="testAddUsersPage"/>
+          <include name="testUserSessionPage"/>
+          <include name="outletStatus"/>
+          <include name="exportData"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="testDatasetManagmentPage"/>
+          <include name="testAssertManagmentPage"/>
+          <include name="testSitePage"/>
           <include name="testCustomerConfigPage"/>
           <include name="testCustomerPage"/>
           <include name="openBrowser"/>
-          <include name="reports"/>
-          <include name="login"/>
           <include name="logout"/>
-          <include name="closeBrowser"/>
-          <include name="usecaseList"/>
-          <include name="testDatasetManagmentPage"/>
+          <include name="testReportsPage"/>
         </methods>
       </class> <!-- com.cng.testscript.TestScript -->
     </classes>

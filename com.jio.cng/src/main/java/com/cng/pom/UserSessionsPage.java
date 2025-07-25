@@ -42,6 +42,7 @@ public class UserSessionsPage {
 
 	public void setUserSession() throws InterruptedException, AWTException
 	{
+		Thread.sleep(3000);
 		select_UserSession.click();
 		Thread.sleep(1000);
 		five_Minutes.click();
