@@ -47,7 +47,7 @@ public class TestScript extends BaseClass {
 	@Description("It checks for the broken images in the consolidate dashboard")
 	@Severity(SeverityLevel.MINOR)
 	@SuppressWarnings("deprecation")
-	@Test(enabled = false, priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void dummy() throws Exception {
 		Thread.sleep(2000);
 		List<WebElement> images = driver.findElements(By.tagName("img"));
