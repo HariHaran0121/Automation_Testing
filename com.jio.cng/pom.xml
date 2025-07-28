@@ -112,20 +112,27 @@
 	<build>
 		<plugins>
 			<!-- Surefire Plugin for running tests -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.5.2</version>
-				<configuration>
-					<argLine>
-						-Dfile.encoding=${project.build.sourceEncoding}
-						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-					</argLine>
-					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>
+		<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-surefire-plugin</artifactId>
+	<version>3.5.2</version>
+	<configuration>
+		<argLine>
+			-Dfile.encoding=${project.build.sourceEncoding}
+			-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+		</argLine>
+		<suiteXmlFiles>
+			<suiteXmlFile>testng.xml</suiteXmlFile>
+		</suiteXmlFiles>
+		<properties>
+			<property>
+				<name>listener</name>
+				<value>io.qameta.allure.testng.AllureTestNg</value>
+			</property>
+		</properties>
+		<testngArtifactName>org.testng:testng</testngArtifactName>
+	</configuration>
+</plugin>
 
 			<!-- Allure Report Plugin -->
 			<plugin>
