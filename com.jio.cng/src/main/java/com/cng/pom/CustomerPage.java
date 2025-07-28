@@ -96,13 +96,13 @@ public class CustomerPage {
 		Thread.sleep(4000);
 		searchbar.sendKeys("Sparkcognition");
 		robot = new Robot();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		robot.keyPress(KeyEvent.VK_DOWN);
 		robot.keyRelease(KeyEvent.VK_DOWN);
 		Thread.sleep(3000);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 //		city.sendKeys("banglaore");
 //		state.sendKeys("karnataka");
 //		country.sendKeys("India");

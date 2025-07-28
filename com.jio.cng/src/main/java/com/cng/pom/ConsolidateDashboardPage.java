@@ -58,40 +58,40 @@ public class ConsolidateDashboardPage {
 		outletStatus.click();
 		Thread.sleep(2000);
 		dropdownButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		status_All.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		dropdownButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		status_Active.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		dropdownButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		status_Inactive.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		download_Excel.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		outlet_Close_Btn.click();
 	}
 
 	public void setCameraStatus() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		cameraStatus.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		dropdownButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		status_All.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		dropdownButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		status_Active.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		dropdownButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		status_Inactive.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		download_Excel.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		outlet_Close_Btn.click();
 	}
 

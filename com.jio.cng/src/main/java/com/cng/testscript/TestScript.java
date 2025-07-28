@@ -43,15 +43,17 @@ public class TestScript extends BaseClass {
 
 // Code to check the broken image links in the consolidate dashboard.	
 	@Epic("")
-	@Story("Broken Image")
+	@Story("Consolidate Dashboard Page")
 	@Description("It checks for the broken images in the consolidate dashboard")
 	@Severity(SeverityLevel.MINOR)
 	@SuppressWarnings("deprecation")
 	@Test(enabled = true, priority = 1)
-	public void dummy() throws Exception {
+	public void checckBrokenImages() throws Exception {
+		Allure.label("tag", "Consolidate Dashboard Page");
+		Allure.label("tag", "Broken Images");
 		Thread.sleep(2000);
 		List<WebElement> images = driver.findElements(By.tagName("img"));
-		// System.out.println(images.size());
+		System.out.println(images.size());
 
 		for (WebElement image : images) {
 			String imageSrc = image.getAttribute("src");
@@ -75,33 +77,42 @@ public class TestScript extends BaseClass {
 
 // Code to check the outlet status 
 	@Epic("")
-	@Story("Outlet Status")
+	@Story("Consolidate Dashboard Page")
 	@Description("Checks the outlet status in the Consolidate Dashboard.")
 	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = true, priority = 2)
 	public void outletStatus() throws InterruptedException {
+		Allure.label("tag", "Consolidate Dashboard Page");
+		Allure.label("tag", "Outlet Status");
 		cdp = new ConsolidateDashboardPage(driver);
+		Reporter.log("OutletList");
 		cdp.setoutletList();
 	}
 
 // Code to check the camera status 
 	@Epic("")
-	@Story("Camera Status")
+	@Story("Consolidate Dashboard Page")
 	@Description("Checks the Camera Status status in the Consolidate Dashboard.")
 	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = true, priority = 3)
 	public void cameraStatus() throws InterruptedException {
+		Allure.label("tag", "Consolidate Dashboard Page");
+		Allure.label("tag", "Camera Status");
 		cdp = new ConsolidateDashboardPage(driver);
+		Reporter.log("CheckCamerList");
 		cdp.setCameraStatus();
 	}
 
 // Code to download Web User Manual and Alert Compliance Report 	
 	@Epic("")
-	@Story("Manual")
+	@Story("Consolidate Dashboard Page")
 	@Description("Checks the UserManual and Alert Compliance Report")
 	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = true, priority = 4)
 	public void exportData() throws InterruptedException {
+		Allure.label("tag", "Consolidate Dashboard Page");
+		Allure.label("tag", "User Manual");
+		Allure.label("tag", "Alert Compliance Report");
 		String home_Page = driver.getWindowHandle();
 		cdp = new ConsolidateDashboardPage(driver);
 		cdp.setExportdropdown(home_Page);
@@ -109,11 +120,13 @@ public class TestScript extends BaseClass {
 
 //Code to read and compare all the usecase list from the dashoard cards under "All violation based on Criticality" and from the excel sheet.
 	@Epic("")
-	@Story("Usecase List")
+	@Story("Consolidate Dashboard Page")
 	@Description("Checks the usecase list under the All Violation Based on Criticality")
 	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = true, priority = 5)
 	public void usecaseList() throws EncryptedDocumentException, IOException {
+		Allure.label("tag", "Consolidate Dashboard Page");
+		Allure.label("tag", "Usecase List");
 		List<WebElement> elements = driver.findElements(
 				By.xpath("//div[@class='dashboard-tile has-cont-busy-ind ng-star-inserted']/div[1]/div[1]/span[1]"));
 		int count = elements.size();
@@ -134,7 +147,7 @@ public class TestScript extends BaseClass {
 	public void testCustomerPage() throws Exception {
 		Allure.label("tag", "Customer Page");
 		Allure.label("tag", "Customer Details");
-		Allure.label("tag", "Customer Infor, priority = 1mation");
+		Allure.label("tag", "Customer Info");
 		CustomerPage cus = new CustomerPage(driver);
 		cus.setCustomer();
 		cus.setAddCustomer();
@@ -260,7 +273,7 @@ public class TestScript extends BaseClass {
 	}
 
 	// code to delete a user only if AddUsersPage method works. <Make sure change
-	// enabled= true into enabled= true>
+	// enabled= false into enabled= true>
 	@Story("User Page")
 	@Description("This code for the checking of the deleted user")
 	@Severity(SeverityLevel.MINOR)
@@ -285,7 +298,7 @@ public class TestScript extends BaseClass {
 	}
 
 	@Epic("")
-	@Story("Customer Page")
+	@Story("Customer Config Page")
 	@Description("This is for checking the customer page.")
 	@Severity(SeverityLevel.MINOR)
 	@Test(enabled = true, priority = 12)

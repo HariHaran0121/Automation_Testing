@@ -71,7 +71,7 @@ public class ReportPage {
 		dropdown_Pan.click();
 		
 		generate_Report.click();
-		Thread.sleep(7000);
+		Thread.sleep(10000);
 	}
 	
 	
